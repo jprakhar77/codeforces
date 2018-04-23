@@ -1,0 +1,35 @@
+19 A - Alternating Sum
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+12 2 2 3 3
++-+
+
+2 7
+
+1
+1
+10 4 1 5 1
+-
+
+10 999999228
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.04.17
+71 Tinkoff Internship Warmup Round 2018 and Codeforces Round #475 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0
