@@ -34,7 +34,7 @@ public class Geometry {
             this.c = c;
         }
 
-        //for line passing through (x1,y1) and (x2,y2)
+        //for line passing through (x1,y1) AND (x2,y2)
         public line(double x1, double y1, double x2, double y2) {
             this.a = y2 - y1;
             this.b = x1 - x2;

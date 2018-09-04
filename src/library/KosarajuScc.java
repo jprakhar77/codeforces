@@ -5,12 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class Sat {
-
+public class KosarajuScc {
     int n;
-    Set[] g;
+    List[] g;
 
-    public Sat(int n, Set[] g) {
+    public KosarajuScc(int n, List[] g) {
         this.n = n;
         this.g = g;
         this.comp = new int[2 * n];
@@ -81,60 +80,5 @@ public class Sat {
                 dfs1(v, g, cn, vis);
             }
         }
-    }
-
-    boolean checkSatisfiability() {
-        for (int i = 0; i < n; i++) {
-            if (comp[i] == comp[n + i]) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    void assignVals() {
-        boolean[] vis = new boolean[2 * n];
-        for (Integer v : sccOrder) {
-            if (!vis[v]) {
-                dfs2(v, rg, vis);
-            }
-        }
-    }
-
-    void dfs2(int u, List[] g, boolean[] vis) {
-        if (u >= n) {
-            if (val[u - n] == 0) {
-                val[u - n] = 1;
-            }
-        } else {
-            if (val[u] == 0) {
-                val[u] = -1;
-            }
-        }
-
-        vis[u] = true;
-
-        for (int j = 0; j < g[u].size(); j++) {
-            int v = (int) g[u].get(j);
-
-            if (!vis[v]) {
-                dfs2(v, g, vis);
-            }
-        }
-    }
-
-    void dummyCall() {
-        Sat sat = new Sat(2 * n, g);
-
-        sat.generateSccOrder();
-        sat.reverseEdge();
-        sat.scc();
-
-        if (!sat.checkSatisfiability()) {
-            return;
-        }
-
-        sat.assignVals();
     }
 }

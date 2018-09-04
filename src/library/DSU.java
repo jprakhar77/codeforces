@@ -3,7 +3,7 @@ package library;
 import java.util.HashMap;
 import java.util.Map;
 
-//T should implement equals and hashcode
+//T should implement equals AND hashcode
 public class DSU<T> {
 
     Map<T, T> parent = new HashMap<>();
@@ -25,8 +25,12 @@ public class DSU<T> {
     }
 
     T mergeSets(T x, T y) {
-        T rx = parent.get(x);
-        T ry = parent.get(y);
+        T rx = findSet(x);
+        T ry = findSet(y);
+
+        if (rx.equals(ry)) {
+            return rx;
+        }
 
         T fp = null;
 

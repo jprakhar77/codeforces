@@ -2,38 +2,49 @@ package library;
 
 public class NextPermutation {
 
-    public int[] nextPermute(int[] perm) {
+    public int[] nextPermutation(int[] nums) {
+        if (nums == null || nums.length < 2)
+            return null;
 
-        int n = perm.length;
-
-        int k = -1;
-        for (int i = 0; i < n - 1; i++) {
-            if (perm[i] < perm[i + 1]) {
-                k = i;
+        int p = 0;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
+                p = i;
+                break;
             }
         }
 
-        if (k == -1) {
+        int q = 0;
+        for (int i = nums.length - 1; i > p; i--) {
+            if (nums[i] > nums[p]) {
+                q = i;
+                break;
+            }
+        }
+
+        if (p == 0 && q == 0) {
+            reverse(nums, 0, nums.length - 1);
             return null;
         }
 
-        int l = -1;
-        for (int i = k + 1; i < n - 1; i++) {
-            if (perm[i] > perm[k]) {
-                l = i;
-            }
+        int temp = nums[p];
+        nums[p] = nums[q];
+        nums[q] = temp;
+
+        if (p < nums.length - 1) {
+            reverse(nums, p + 1, nums.length - 1);
         }
 
-        for (int i = k + 1, j = n - 1; i < j; i++, j--) {
-            swap(perm, i, j);
-        }
-
-        return perm;
+        return nums;
     }
 
-    void swap(int[] perm, int i, int j) {
-        int t = perm[i];
-        perm[i] = perm[j];
-        perm[j] = t;
+    public void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+            left++;
+            right--;
+        }
     }
 }

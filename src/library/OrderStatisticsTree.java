@@ -133,7 +133,7 @@ public class OrderStatisticsTree {
         } else if (value > root.value) {
             root.right = insertHelper(root.right, value);
         } else
-            // Duplicate values not supported.
+            // Duplicate values NOT supported.
             return root;
 
         root.height = 1 + max(height(root.left), height(root.right));
