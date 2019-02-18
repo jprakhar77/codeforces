@@ -1,0 +1,64 @@
+{
+  "name" : "E. The Fair Nut and Rectangles",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n4 4 8\n1 5 0\n5 2 10\n",
+    "output" : "9\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4\n6 2 4\n1 6 2\n2 4 3\n5 3 8\n",
+    "output" : "10\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n1000000000 1000000000 1000000000000000000",
+    "output" : "0",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "5\n732540292 225231943 59578584627893686\n370353847 368653517 104069404844594138\n978010227 1498336 818018890670544\n16695105 875794653 6779226035907661\n219075646 809015132 81930182445683568",
+    "output" : "151375385473485196",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "8\n5 12 34\n1 15 6\n13 2 7\n3 13 14\n9 7 51\n6 10 52\n11 3 3\n15 1 2",
+    "output" : "48",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "9\n12 8 8\n9 10 37\n4 14 7\n15 4 41\n7 11 64\n2 16 4\n16 1 7\n14 5 57\n6 12 26",
+    "output" : "105",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "7\n544946814 242438695 34573121400323320\n904143335 100254836 7205333104177863\n86025896 621935087 25630543199288874\n631751322 231591620 90459830593349468\n759866338 176173066 105697932148603504\n910535977 22655694 4952527094437613\n276284329 496277951 100008996391955491",
+    "output" : "133364902181970461",
+    "index" : 6,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.ETheFairNutAndRectangles",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.13",
+  "contestName" : "Codeforces Round #526 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

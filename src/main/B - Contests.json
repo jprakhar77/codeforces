@@ -1,0 +1,44 @@
+{
+  "name" : "B - Contests",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7\n5 15\n1 10 16 2 7 20 12\n",
+    "output" : "2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "8\n3 8\n5 5 5 10 10 10 15 20\n",
+    "output" : "0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\n5 6\n5 6 10\n",
+    "output" : "1\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.BContests",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.12",
+  "contestName" : "AISing Programming Contest 2019 / エイシング プログラミング コンテスト 2019",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

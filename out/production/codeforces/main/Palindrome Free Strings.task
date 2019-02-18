@@ -1,0 +1,45 @@
+23 Palindrome Free Strings
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+6 abacd
+
+2 1
+
+1
+1
+6 aacde
+
+2 1
+
+1
+2
+6 abbaa
+
+2 2
+
+1
+3
+6 abbbe
+
+2 2
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+26 main.PalindromeFreeStrings
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.23
+7 Archive
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

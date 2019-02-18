@@ -1,0 +1,44 @@
+18 D - Iahub and Xors
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+60 3 5
+2 1 1 2 2 1
+2 1 3 2 3 2
+2 3 1 3 3 3
+1 2 2 3 3
+1 2 2 3 2
+
+4 3
+2
+
+1
+1
+99 10 7
+1 3 1 7 2
+2 1 6 2 9 27233
+2 5 4 10 9 89531
+2 4 3 6 8 93113
+2 7 1 7 5 24244
+1 4 1 8 2
+1 1 1 7 7
+-1
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._341D
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.31
+30 Codeforces Round #198 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

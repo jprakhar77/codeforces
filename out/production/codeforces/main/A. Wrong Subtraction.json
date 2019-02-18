@@ -1,0 +1,39 @@
+{
+  "name" : "A. Wrong Subtraction",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "512 4\n",
+    "output" : "50\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1000000000 9\n",
+    "output" : "1\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.AWrongSubtraction",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.30",
+  "contestName" : "Codeforces Round #479 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

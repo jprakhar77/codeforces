@@ -1,0 +1,44 @@
+{
+  "name" : "D - Factorization",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 6\n",
+    "output" : "4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 12\n",
+    "output" : "18\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "100000 1000000000\n",
+    "output" : "957870001\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.abc110_d",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.06",
+  "contestName" : "AtCoder Beginner Contest 110",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

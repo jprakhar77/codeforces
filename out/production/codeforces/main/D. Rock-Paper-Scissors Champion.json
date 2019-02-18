@@ -1,0 +1,34 @@
+{
+  "name" : "D. Rock-Paper-Scissors Champion",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 5\nRPS\n1 S\n2 R\n3 P\n1 P\n2 P\n",
+    "output" : "2\n2\n1\n2\n2\n3\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.DRockPaperScissorsChampion",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.24",
+  "contestName" : "Codeforces Round #528 (Div. 1, based on Technocup 2019 Elimination Round 4)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

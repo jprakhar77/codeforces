@@ -1,0 +1,49 @@
+19 C - String Coloring
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+11 4
+cabaacba
+
+2 4
+
+1
+1
+26 11
+mippiisssisssiipsspiim
+
+4 504
+
+1
+2
+11 4
+abcdefgh
+
+2 0
+
+1
+3
+40 18
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+11 9075135300
+
+1
+8 src/main
+9 -Xmx1024M
+4 Main
+10 main.agc18c
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.19
+25 AtCoder Grand Contest 026
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

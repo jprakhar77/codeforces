@@ -1,0 +1,39 @@
+{
+  "name" : "C. From Y to Y",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "12\n",
+    "output" : "abababab\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n",
+    "output" : "codeforces\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.CFromYToY",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.16",
+  "contestName" : "Codeforces Round #431 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

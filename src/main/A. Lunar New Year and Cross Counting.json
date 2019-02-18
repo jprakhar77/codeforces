@@ -1,0 +1,44 @@
+{
+  "name" : "A. Lunar New Year and Cross Counting",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n.....\n.XXX.\n.XXX.\n.XXX.\n.....\n",
+    "output" : "1\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\nXX\nXX\n",
+    "output" : "0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "6\n......\nX.X.X.\n.X.X.X\nX.X.X.\n.X.X.X\n......\n",
+    "output" : "4\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.ALunarNewYearAndCrossCounting",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.31",
+  "contestName" : "Codeforces Round #536 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

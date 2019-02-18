@@ -1,0 +1,35 @@
+32 A - In Search of an Easy Problem
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+8 3
+0 0 1
+
+5 HARD
+
+1
+1
+4 1
+0
+
+5 EASY
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.23
+75 Codeforces Round #512 (Div. 2, based on Technocup 2019 Elimination Round 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

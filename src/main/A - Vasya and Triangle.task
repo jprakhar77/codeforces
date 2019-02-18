@@ -1,0 +1,36 @@
+22 A - Vasya and Triangle
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 4 3 3
+
+16 YES
+1 0
+2 3
+4 1
+
+1
+1
+6 4 4 7
+
+3 NO
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+11 main._1053A
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.28
+75 Codeforces Round #512 (Div. 1, based on Technocup 2019 Elimination Round 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

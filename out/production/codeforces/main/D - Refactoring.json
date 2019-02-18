@@ -1,0 +1,44 @@
+{
+  "name" : "D - Refactoring",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1\ntopforces\ncodecoder\n",
+    "output" : "YES\ntopforces\ncodecoder\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\nbab\ncac\ncdc\nbdb\ncdc\ncdc\n",
+    "output" : "YES\na\nd\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\nyou\nshal\nnot\npass\n",
+    "output" : "NO\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._1055D",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.12",
+  "contestName" : "Mail.Ru Cup 2018 Round 2",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

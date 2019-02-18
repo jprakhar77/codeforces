@@ -1,0 +1,42 @@
+24 Smallest Missing Numbers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+10 3 1
+1 2 3
+
+2 4
+
+1
+1
+14 5 5
+9 8 5 4 2
+
+3 27
+
+1
+2
+13 3 3
+10 11 12
+
+2 6
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+27 main.SmallestMissingNumbers
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.04
+8 Round 83
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

@@ -1,0 +1,42 @@
+17 A - Phone Numbers
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+15 11
+00000000008
+
+2 1
+
+1
+1
+26 22
+0011223344556677889988
+
+2 2
+
+1
+2
+15 11
+31415926535
+
+2 0
+
+1
+8 src/main
+8 -Xmx512M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.10.04
+68 Codeforces Round #513 by Barcelona Bootcamp (rated, Div. 1 + Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

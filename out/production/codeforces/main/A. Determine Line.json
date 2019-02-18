@@ -1,0 +1,39 @@
+{
+  "name" : "A. Determine Line",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n3 1 4 6\n2 1 4\n5 10 5 6 4 1\n",
+    "output" : "1 4 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n1 1\n10 10 9 8 7 100 5 4 3 99 1\n5 1 2 3 4 5\n5 4 1 3 2 5\n4 10 1 5 3\n",
+    "output" : "1 \n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.ADetermineLine",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.25",
+  "contestName" : "Mail.Ru Cup 2018 Round 3",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,59 @@
+22 hellooo - Stop. Otherwise...
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+4 3 3
+
+10 7
+7
+4
+7
+7
+
+1
+1
+4 4 5
+
+21 36
+36
+20
+20
+20
+36
+36
+
+1
+2
+7 6 1000
+
+104 149393349
+149393349
+668669001
+668669001
+4000002
+4000002
+4000002
+668669001
+668669001
+149393349
+149393349
+
+1
+8 src/main
+9 -Xmx1024M
+4 Main
+12 main.arc102e
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.02
+27 AtCoder Regular Contest 102
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

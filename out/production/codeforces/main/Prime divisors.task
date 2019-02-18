@@ -1,0 +1,28 @@
+14 Prime divisors
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+17 1
+1
+5
+2 30 2 4 3	
+1 6
+1
+8 src/main
+6 -Xmx1g
+4 Main
+18 main.PrimeDivisors
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.28
+30 July Lunchtime 2018 Division 1
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

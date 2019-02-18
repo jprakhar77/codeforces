@@ -1,0 +1,74 @@
+{
+  "name" : "D - Choosing Points",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 1 2\n",
+    "output" : "0 0\n0 2\n2 0\n2 2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 1 5\n",
+    "output" : "0 0\n0 2\n0 4\n1 1\n1 3\n1 5\n2 0\n2 2\n2 4\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10 2 4",
+    "output" : "",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "100 4 16",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "300 5120 76928",
+    "output" : "",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "2 1 1",
+    "output" : "",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "1 1 2",
+    "output" : "",
+    "index" : 6,
+    "active" : true
+  }, {
+    "input" : "3 1 2",
+    "output" : "",
+    "index" : 7,
+    "active" : true
+  }, {
+    "input" : "3 1 4",
+    "output" : "",
+    "index" : 8,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.agc025d",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.01",
+  "contestName" : "AtCoder Grand Contest 025",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

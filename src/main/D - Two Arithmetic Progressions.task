@@ -1,0 +1,29 @@
+31 D - Two Arithmetic Progressions
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+48 1384140089 5 16 -1661922737 442287491 1568124284
+1 0
+1
+1
+37 4 2963 394 577593 125523962 628140505
+6 637839
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._710D
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.06.23
+31 Educational Codeforces Round 16
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

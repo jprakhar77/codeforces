@@ -1,0 +1,39 @@
+{
+  "name" : "A. Mahmoud and Ehab and the even-odd game",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1\n",
+    "output" : "Ehab\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n",
+    "output" : "Mahmoud\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.AMahmoudAndEhabAndTheEvenOddGame",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.04",
+  "contestName" : "Codeforces Round #473 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

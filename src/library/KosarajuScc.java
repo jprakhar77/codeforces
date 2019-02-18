@@ -12,8 +12,8 @@ public class KosarajuScc {
     public KosarajuScc(int n, List[] g) {
         this.n = n;
         this.g = g;
-        this.comp = new int[2 * n];
-        this.rg = new List[2 * n];
+        this.comp = new int[n];
+        this.rg = new List[n];
         this.val = new int[n];
     }
 
@@ -26,8 +26,8 @@ public class KosarajuScc {
     int[] val;
 
     void generateSccOrder() {
-        boolean[] vis = new boolean[2 * n];
-        for (int i = 0; i < 2 * n; i++) {
+        boolean[] vis = new boolean[n];
+        for (int i = 0; i < n; i++) {
             if (!vis[i])
                 dfs0(i, vis);
         }
@@ -35,7 +35,7 @@ public class KosarajuScc {
 
     void dfs0(int u, boolean[] vis) {
         vis[u] = true;
-        for (Integer v : (Set<Integer>) g[u]) {
+        for (Integer v : (List<Integer>) g[u]) {
             if (!vis[v]) {
                 dfs0(v, vis);
             }
@@ -45,12 +45,12 @@ public class KosarajuScc {
     }
 
     void reverseEdge() {
-        for (int i = 0; i < 2 * n; i++) {
+        for (int i = 0; i < n; i++) {
             rg[i] = new ArrayList<>();
         }
 
-        for (int i = 0; i < 2 * n; i++) {
-            for (Integer v : (Set<Integer>) g[i]) {
+        for (int i = 0; i < n; i++) {
+            for (Integer v : (List<Integer>) g[i]) {
 
                 rg[v].add(i);
             }
@@ -58,7 +58,7 @@ public class KosarajuScc {
     }
 
     void scc() {
-        boolean[] vis = new boolean[2 * n];
+        boolean[] vis = new boolean[n];
         int cn = 0;
         for (Integer v : sccOrder) {
 

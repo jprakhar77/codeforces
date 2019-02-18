@@ -1,0 +1,37 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><p><i>All problems in this problem set are about "chains": collections of nested ranges of integers. All problems are independent, but use the same definitions. Each problem statement contains the definitions it needs. If a term appears in multiple problems, the definition is always identical.</i></p>
+
+<p>
+Definitions follow. The defined term is always in uppercase.
+</p>
+
+<ul>
+<li>
+An <i>INTERVAL</i> [x,y) with x &lt;= y is the set of integers that are greater than or equal to x, and strictly less than y.
+</li>
+<li>
+There is only one <i>EMPTY INTERVAL</i> but it has multiple equivalent notations. For example, [0,0) and [3,3) both denote the empty interval. Note that [3,0) is not a valid interval, because an interval [x,y) must have x &lt;= y.
+</li>
+<li>
+An interval I<sub>1</sub> is called a <i>PROPER SUBSET</i> of an interval I<sub>2</sub> if I<sub>2</sub> contains all elements of I<sub>1</sub> and at least one other element.
+</li>
+<li>
+A <i>CHAIN</i> is a <i>nonempty</i> sequence of intervals such that each interval (except for the last one) is a proper subset of the next interval.
+</li>
+<li>
+A <i>CHAIN OF ORDER n</i> is any chain such that the last interval in the chain is either the interval [0,n) or its proper subset.
+</li>
+</ul>
+
+<p>
+You are given a sequence of valid intervals.
+More precisely, you are given two int[]s: <b>x</b> and <b>y</b>.
+It is guaranteed that for each valid i, [ <b>x</b>[i], <b>y</b>[i] ) is a valid interval.
+</p>
+
+<p>
+If the given sequence of intervals is a chain. return R, where R is the smallest nonnegative integer such that the chain is a chain of order R.
+</p>
+
+<p>
+If the given sequence of intervals is not a chain, return (-T), where T is the largest positive integer such that the first T-1 intervals of the input sequence still do form a valid chain.
+</p></td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>Chains2</td></tr><tr><td>Method:</td><td>validate</td></tr><tr><td>Parameters:</td><td>int[], int[]</td></tr><tr><td>Returns:</td><td>int</td></tr><tr><td>Method signature:</td><td>int validate(int[] x, int[] y)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td colspan="2"><h3>Limits</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Time limit (s):</td><td>2.000</td></tr><tr><td>Memory limit (MB):</td><td>256</td></tr></table></td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td>n will be between 1 and 30, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>Each of <b>x</b> and <b>y</b> will have exactly n elements.</td></tr><tr><td align="center" valign="top">-</td><td>For each valid i, 0 &lt;= <b>x</b>[i] &lt;= <b>y</b>[i] &lt; 2^30.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{0, 0, 0}</pre></td></tr><tr><td><pre>{0, 1, 3}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 3</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{1, 4, 4}</pre></td></tr><tr><td><pre>{1, 7, 8}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 8</pre></td></tr><tr><td><table><tr><td colspan="2">Note that the first interval in this chain is the empty interval. The empty interval is a proper subset of the interval [4,7) so everything is in order.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{4, 4, 3}</pre></td></tr><tr><td><pre>{5, 7, 6}</pre></td></tr></table></td></tr><tr><td><pre>Returns: -3</pre></td></tr><tr><td><table><tr><td colspan="2">[4,5), [4,7) is a valid chain but [4,5), [4,7), [3,6) isn't.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{4, 4}</pre></td></tr><tr><td><pre>{7, 7}</pre></td></tr></table></td></tr><tr><td><pre>Returns: -2</pre></td></tr><tr><td><table><tr><td colspan="2">Each interval must be a proper subset of the next one.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">4)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{3}</pre></td></tr><tr><td><pre>{3}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 0</pre></td></tr><tr><td><table><tr><td colspan="2">This valid chain consists of one interval. That interval happens to be the empty interval. Thus, this is a valid chain of order 0.</td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

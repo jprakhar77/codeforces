@@ -1,0 +1,62 @@
+28 D - Graph And Its Complement
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+7
+0
+6 3 1 2
+
+16 YES
+001
+001
+110
+
+1
+1
+6 3 3 3
+
+3 NO
+
+1
+2
+5 1 1 1
+5 YES
+0
+1
+3
+5 2 1 1
+2 NO
+1
+4
+5 2 1 2
+9 YES
+01
+10
+1
+5
+5 3 1 1
+2 NO
+1
+6
+5 3 1 3
+15 YES
+011
+101
+110
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._1010D
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.06.10
+50 Educational Codeforces Round 45 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

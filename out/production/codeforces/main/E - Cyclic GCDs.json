@@ -1,0 +1,39 @@
+{
+  "name" : "E - Cyclic GCDs",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n4 3\n",
+    "output" : "3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4\n2 5 2 5\n",
+    "output" : "2\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.ECyclicGCDs",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.27",
+  "contestName" : "Dwango Programming Contest V / 第5回 ドワンゴからの挑戦状 予選",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

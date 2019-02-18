@@ -79,7 +79,7 @@ class DinicMaxflow {
                 }
 
                 vn.flow += flow;
-                g.get(v).get(vn.rei).flow -= flow;
+                g.get(v).get(vn.reverseEdgeIndex).flow -= flow;
 
                 return flow;
             }
@@ -107,14 +107,14 @@ class DinicMaxflow {
         int v;
         int flow;
         int cap;
-        int rei;
+        int reverseEdgeIndex;
 
-        public Node(int v, int flow, int cap, int rei) {
+        public Node(int v, int flow, int cap, int reverseEdgeIndex) {
             super();
             this.v = v;
             this.flow = flow;
             this.cap = cap;
-            this.rei = rei;
+            this.reverseEdgeIndex = reverseEdgeIndex;
         }
     }
 

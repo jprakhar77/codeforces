@@ -1,0 +1,39 @@
+{
+  "name" : "C - ID",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 3\n1 32\n2 63\n1 12\n",
+    "output" : "000001000002\n000002000001\n000001000001\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2 3\n2 55\n2 77\n2 99\n",
+    "output" : "000002000001\n000002000002\n000002000003\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.04",
+  "contestName" : "AtCoder Beginner Contest 113",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,77 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><p>
+Bob is building a computer game.
+In the game the player's goal is to navigate his avatar through a maze to the exit.
+The floor of the maze is a square grid.
+Each cell of the maze is a corridor (passable), a wall (impassable), or a door (explained below).
+The avatar can move in the four cardinal directions.
+</p>
+
+<p>
+Each door cell requires a different key.
+If the avatar doesn't have the key, the door cell behaves like a wall, but with the key it behaves like a corridor.
+Each corridor contains at most one key.
+Whenever the avatar enters a cell with a key, it picks up the key automatically.
+The avatar can carry arbitrarily many keys and use each key arbitrarily many times.
+</p>
+
+<p>
+You are given the layout of the maze in the String[] <b>a</b>.
+Each character represents one cell, as follows:
+</p>
+
+<ul>
+<li>'.' represents a corridor without a key</li>
+<li>'#' represents a wall</li>
+<li>'*' represents the exit</li>
+<li>uppercase letters ('A'-'Z') represent doors</li>
+<li>lowercase letters ('a'-'z') represent a corridor that contains the corresponding key</li>
+</ul>
+
+<p>
+Additional comments:
+</p>
+
+<ul>
+<li>There will always be exactly one exit.</li>
+<li>No two doors will share the same letter.</li>
+<li>Each key opens the door that corresponds to its uppercase version. hellooo.g., key 'e' opens door 'hellooo'.</li>
+<li>There may be arbitrarily many keys of each type (possibly even zero).</li>
+</ul>
+
+<p>
+As you may have noticed, one thing is missing: the start.
+Bob needs to choose one of the empty corridors ('.' cells) as the start.
+When doing so, Bob has two constraints.
+First, the level must be solvable.
+Second, the level must not be <i>boring</i>.
+A level is boring if the player can reach the goal without opening any doors.
+Thus, Bob needs to choose the start in such a way that the avatar can reach the exit, but along its way it must open at least one door.
+</p>
+
+<p>
+Compute and return the number of possible locations for the start.
+</p></td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>MazeWithKeys</td></tr><tr><td>Method:</td><td>startingPoints</td></tr><tr><td>Parameters:</td><td>String[]</td></tr><tr><td>Returns:</td><td>int</td></tr><tr><td>Method signature:</td><td>int startingPoints(String[] a)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td colspan="2"><h3>Limits</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Time limit (s):</td><td>2.000</td></tr><tr><td>Memory limit (MB):</td><td>256</td></tr></table></td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td><b>a</b> will contain between 1 and 50 elements, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>Each element of <b>a</b> will contain between 1 and 50 characters, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>All elements of <b>a</b> will have the same length.</td></tr><tr><td align="center" valign="top">-</td><td>Each character in <b>a</b> will be '.', '#', '*', an uppercase letter, or a lowercase letter.</td></tr><tr><td align="center" valign="top">-</td><td>There will be exactly one '*' in <b>a</b>.</td></tr><tr><td align="center" valign="top">-</td><td>All uppercase letters in <b>a</b> will be distinct.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;...#.A.&quot;,
+ &quot;.#B#.#.&quot;,
+ &quot;.#.#.#.&quot;,
+ &quot;.#.#.#.&quot;,
+ &quot;.#b#.#.&quot;,
+ &quot;a#...#*&quot;}
+</pre></td></tr></table></td></tr><tr><td><pre>Returns: 10</pre></td></tr><tr><td><table><tr><td colspan="2">In the diagram below, the cells marked by 1 are valid starting locations, as the puzzle is both solvable and not boring. Cells marked 2 are not valid locations for the start because from these cells the avatar can reach the exit without opening a door (i.e., the level would be boring). Cells marked 3 are not valid locations for the start because the level would be unsolvable: the avatar needs to open the 'B' door but cannot reach any 'b' key.
+
+<pre>333#1A2
+3#B#1#2
+3#1#1#2
+3#1#1#2
+3#b#1#2
+a#111#*
+</pre></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;..*&quot;,
+ &quot;.a.&quot;,
+ &quot;A..&quot;}
+</pre></td></tr></table></td></tr><tr><td><pre>Returns: 0</pre></td></tr><tr><td><table><tr><td colspan="2">In this level there are no good locations for the start. Even though the avatar can pick up the 'a' key and open the 'A' door, this is never needed. In other words, regardless of where Bob places the start, there will always be a way to reach the goal without opening any doors, so the level will always be boring.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;.A*C.&quot;,
+ &quot;.#B#.&quot;,
+ &quot;.#.#.&quot;,
+ &quot;a..b.&quot;}
+</pre></td></tr></table></td></tr><tr><td><pre>Returns: 10</pre></td></tr><tr><td><table><tr><td colspan="2">Any empty cell would make a good starting location, as the player needs to unlock either the door 'A' or the door 'B' to reach the exit. Note that there is no 'c' key even though there is a 'C' door.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;a#a#*&quot;,
+ &quot;#..#.&quot;,
+ &quot;a..A.&quot;}
+</pre></td></tr></table></td></tr><tr><td><pre>Returns: 4</pre></td></tr><tr><td><table><tr><td colspan="2">Note that there are three copies of the key 'a'. Any one of them is enough to unlock the door.</td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

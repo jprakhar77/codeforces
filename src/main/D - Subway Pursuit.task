@@ -1,0 +1,41 @@
+18 D - Subway Pursuit
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+24 10 2
+
+Yes
+
+No
+
+Yes
+
+Yes
+
+19 3 5
+
+3 3
+
+3 4
+
+5 5
+
+1
+8 src/main
+8 -Xmx512M
+4 Main
+10 main.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.05
+65 Codeforces Round #507 (Div. 2, based on Olympiad of Metropolises)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

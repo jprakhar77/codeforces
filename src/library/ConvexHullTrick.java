@@ -52,6 +52,7 @@ public class ConvexHullTrick {
             } else {
                 point point = new point();
 
+                //Be careful of decimal precision issues here. BigDecimal can be helpful.
                 point.x = (line.b * c - b * line.c) / det;
                 point.y = (a * line.c - line.a * c) / det;
 
@@ -76,7 +77,8 @@ public class ConvexHullTrick {
 
     List<ExtendedLine> stack = new ArrayList<>();
 
-    public void addToLast(line l3) {
+    //Use this when the lines are given in order of decreasing slopes
+    public void addToLastMinimumSlope(line l3) {
         if (stack.isEmpty()) {
             stack.add(new ExtendedLine(l3, null));
             return;
@@ -104,7 +106,8 @@ public class ConvexHullTrick {
         return p1.x <= p2.x;
     }
 
-    public double searchMin(double x) {
+    //Use this if the lines were given in the order of decreasing slopes
+    public double searchMinSortedSlopeDesc(double x) {
         assert !stack.isEmpty();
         if (stack.size() == 1 || stack.get(1).intersectionPoint.x > x) {
             line line = stack.get(0).line;
@@ -119,6 +122,66 @@ public class ConvexHullTrick {
             int mid = (lo + hi) / 2;
 
             if (stack.get(mid).intersectionPoint.x <= x) {
+                ans = Math.max(ans, mid);
+                lo = mid + 1;
+            } else {
+                hi = mid - 1;
+            }
+        }
+
+        line line = stack.get(ans).line;
+        return line.getSlope() * x + line.c;
+    }
+
+    //Use this when the lines are given in the order of increasing slopes
+    //Note that lines from the front of the list to the back are in the order from right to left
+    //if you draw them graphically
+    public void addToLastMaximumSlope(line l3) {
+        if (stack.isEmpty()) {
+            stack.add(new ExtendedLine(l3, null));
+            return;
+        }
+
+        while (stack.size() > 1) {
+            ExtendedLine l2 = stack.get(stack.size() - 1);
+            stack.remove(stack.size() - 1);
+            ExtendedLine l1 = stack.get(stack.size() - 1);
+
+            point ip = l3.intersect(l1.line);
+            if (isRight(ip, l2.intersectionPoint)) {
+                continue;
+            } else {
+                stack.add(l2);
+                stack.add(new ExtendedLine(l3, l3.intersect(l2.line)));
+                return;
+            }
+        }
+
+        stack.add(new ExtendedLine(l3, l3.intersect(stack.get(stack.size() - 1).line)));
+    }
+
+    public boolean isRight(point p1, point p2) {
+        return p1.x >= p2.x;
+    }
+
+    //Use this if the lines were given in the order of increasing slopes
+    //Note that lines from the front of the list to the back are in the order from right to left
+    //if you draw them graphically
+    public double searchMinSortedSlopeAsc(double x) {
+        assert !stack.isEmpty();
+        if (stack.size() == 1 || stack.get(1).intersectionPoint.x <= x) {
+            line line = stack.get(0).line;
+            return line.getSlope() * x + line.c;
+        }
+
+        int lo = 1;
+        int hi = stack.size() - 1;
+
+        int ans = 1;
+        while (lo <= hi) {
+            int mid = (lo + hi) / 2;
+
+            if (stack.get(mid).intersectionPoint.x >= x) {
                 ans = Math.max(ans, mid);
                 lo = mid + 1;
             } else {

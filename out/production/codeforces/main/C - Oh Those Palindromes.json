@@ -1,0 +1,39 @@
+{
+  "name" : "C - Oh Those Palindromes",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\noolol\n",
+    "output" : "ololo\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "16\ngagadbcgghhchbdf\n",
+    "output" : "abccbaghghghgdfd\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.14",
+  "contestName" : "Codeforces Round #516 (Div. 2, by Moscow Team Olympiad)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

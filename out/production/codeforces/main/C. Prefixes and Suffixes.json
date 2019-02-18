@@ -1,0 +1,44 @@
+{
+  "name" : "C. Prefixes and Suffixes",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\nba\na\nabab\na\naba\nbaba\nab\naba\n",
+    "output" : "SPPSPSPS\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\na\naa\naa\na\n",
+    "output" : "PPSS\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\na\nc\n",
+    "output" : "PS\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.CPrefixesAndSuffixes",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.19",
+  "contestName" : "Codeforces Round #527 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

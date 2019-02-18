@@ -1,0 +1,39 @@
+{
+  "name" : "A - Cram Time",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 3\n",
+    "output" : "1\n3 \n2\n2 1 ",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "9 12\n",
+    "output" : "2\n3 6\n4\n1 2 4 5\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._1071A",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.21",
+  "contestName" : "Codeforces Round #517 (Div. 1, based on Technocup 2019 Elimination Round 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

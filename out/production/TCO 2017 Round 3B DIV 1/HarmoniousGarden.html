@@ -1,0 +1,37 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td>Fox Ciel wants to build a garden.
+In this task, a garden consists of some pavilions and some paths.
+Each path is bidirectional and connects two different pavilions.
+Each pair of pavilions can be directly connected by at most one path.
+<br></br>
+<br></br>
+A simple cycle is a sequence (x1, x2, ..., xm) of three or more <i>mutually distinct</i> pavilions such that the garden contains all of the following paths: (x1, x2), (x2, x3), ..., (xm-1, xm), and also (xm, x1).
+The length of a simple cycle is the number of pavilions it contains.
+<br></br>
+<br></br>
+Two cycles are considered the same if we can rotate and/or flip one of them to get the other.
+For example, (x1, x2, x3, x4), (x2, x3, x4, x1), and (x4, x3, x2, x1) are all the same cycle, but (x1, x3, x2, x4) is another cycle that is not the same as the first three.
+<br></br>
+<br></br>
+You are given the ints <b>n</b>, <b>k</b>, and <b>L</b>.
+Fox Ciel wants to build a garden with exactly <b>n</b> pavilions.
+The garden should contain exactly <b>k</b> distinct simple cycles.
+Additionally, each of those simple cycles must have length exactly <b>L</b>.
+<br></br>
+<br></br>
+Return "Possible" (quotes for clarity) if such a garden exists, or "Impossible" if there is no such garden.</td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>HarmoniousGarden</td></tr><tr><td>Method:</td><td>isPossible</td></tr><tr><td>Parameters:</td><td>int, int, int</td></tr><tr><td>Returns:</td><td>String</td></tr><tr><td>Method signature:</td><td>String isPossible(int n, int k, int L)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td colspan="2"><h3>Limits</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Time limit (s):</td><td>2.000</td></tr><tr><td>Memory limit (MB):</td><td>256</td></tr><tr><td>Stack limit (MB):</td><td>256</td></tr></table></td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td><b>n</b> will be between 1 and 50, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td><b>k</b> will be between 1 and 50, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td><b>L</b> will be between 3 and 50, inclusive.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>8</pre></td></tr><tr><td><pre>2</pre></td></tr><tr><td><pre>4</pre></td></tr></table></td></tr><tr><td><pre>Returns: &quot;Possible&quot;</pre></td></tr><tr><td><table><tr><td colspan="2">We want a garden with 8 pavilions.
+The garden must contain exactly 2 simple cycles, and each simple cycle in the garden must have length 4.
+This is possible.
+One such garden is shown below.
+Note that the garden is not required to be connected.
+<pre>
+#-# #-#
+| | | |
+#-# #-#
+</pre></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>3</pre></td></tr><tr><td><pre>2</pre></td></tr><tr><td><pre>3</pre></td></tr></table></td></tr><tr><td><pre>Returns: &quot;Impossible&quot;</pre></td></tr><tr><td><table><tr><td colspan="2">We can show that any garden with 3 pavilions can have at most one simple cycle.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>5</pre></td></tr><tr><td><pre>2</pre></td></tr><tr><td><pre>3</pre></td></tr></table></td></tr><tr><td><pre>Returns: &quot;Possible&quot;</pre></td></tr><tr><td><table><tr><td colspan="2">One of the solutions is:
+<pre>
+#   #
+|\ /|
+| # | 
+|/ \|
+#   #
+</pre></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>50</pre></td></tr><tr><td><pre>1</pre></td></tr><tr><td><pre>47</pre></td></tr></table></td></tr><tr><td><pre>Returns: &quot;Possible&quot;</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">4)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>50</pre></td></tr><tr><td><pre>2</pre></td></tr><tr><td><pre>47</pre></td></tr></table></td></tr><tr><td><pre>Returns: &quot;Impossible&quot;</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

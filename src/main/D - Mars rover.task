@@ -1,0 +1,36 @@
+14 D - Mars rover
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+67 10
+AND 9 4
+IN 1
+IN 1
+XOR 6 5
+AND 3 7
+IN 0
+NOT 10
+IN 1
+IN 1
+AND 2 8
+
+5 10110
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.03
+30 Codeforces Round #499 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

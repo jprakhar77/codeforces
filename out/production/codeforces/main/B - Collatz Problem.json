@@ -1,0 +1,44 @@
+{
+  "name" : "B - Collatz Problem",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "8\n",
+    "output" : "5\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "7\n",
+    "output" : "18\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "54\n",
+    "output" : "114\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.BCollatzProblem",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.21",
+  "contestName" : "AtCoder Beginner Contest 116",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

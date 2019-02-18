@@ -41,7 +41,7 @@ public class _599E {
                 return;
             }
 
-            if (lca[a][b] != -1) {
+            if (lca[a][b] != -1 && lca[a][b] != c) {
                 out.println(0);
                 return;
             }
@@ -80,6 +80,12 @@ public class _599E {
             return dp[r][mask];
 
         if ((mask & (mask - 1)) == 0) {
+            if (mask != 0) {
+                int bit = Integer.numberOfTrailingZeros(mask);
+                if (lca[bit][r] != -1 && lca[bit][r] != r) {
+                    return dp[r][mask] = 0;
+                }
+            }
             return dp[r][mask] = 1;
         }
 
@@ -97,28 +103,30 @@ public class _599E {
 //            }
 //        }
 
-        for (int i = 0; i < (1 << n); i++) {
-            if ((i & mask) == i && Integer.highestOneBit(i) == Integer.highestOneBit(mask)) {
-                long ans = 0;
-                Set<Integer> s = new HashSet<>();
-                int nr = -1;
-                boolean isp = true;
-                for (int j = 0; j < n; j++) {
-                    if (((1 << j) & i) != 0) {
-                        s.add(j);
-                        if (g[r][j] == 1) {
-                            if (nr != -1) {
-                                isp = false;
-                                break;
-                            }
-                            nr = j;
+        int hob = Integer.highestOneBit(mask);
+        for (int i = mask; i >= hob; i--) {
+            i &= mask;
+            long ans = 0;
+            Set<Integer> s = new HashSet<>();
+            int nr = -1;
+            boolean isp = true;
+            for (int j = 0; j < n; j++) {
+                if (((1 << j) & i) != 0) {
+                    s.add(j);
+                    if (g[r][j] == 1) {
+                        if (nr != -1) {
+                            isp = false;
+                            break;
                         }
+                        nr = j;
                     }
                 }
+            }
 
-                if (!isp)
-                    continue;
+            if (!isp)
+                continue;
 
+            if (q > 0)
                 for (Integer a : s) {
                     for (Integer b : s) {
                         if (lca[a][b] == -1)
@@ -131,14 +139,16 @@ public class _599E {
                     }
                 }
 
+            if (q > 0)
                 for (int a = 0; a < n; a++) {
-                    if (!s.contains(a) && (((1 << a) & i) != 0 || a == r))
+                    if (!s.contains(a) && (((1 << a) & mask) != 0 || a == r))
                         for (Integer b : s) {
                             if (lca[a][b] != -1 && lca[a][b] != r)
                                 isp = false;
                         }
                 }
 
+            if (m > 0)
                 for (int a = 0; a < n; a++) {
                     for (Integer b : s) {
                         if (g[b][a] == 1 && !s.contains(a) && a != r)
@@ -146,20 +156,18 @@ public class _599E {
                     }
                 }
 
-                if (!isp)
-                    continue;
+            if (!isp)
+                continue;
 
-                int nextmask = mask ^ i;
-                if (nr == -1) {
-                    for (Integer a : s) {
-                        ans += rec(a, i) * rec(r, mask ^ i);
-                    }
-                } else {
-                    ans += rec(nr, i) * rec(r, mask ^ i);
+            if (nr == -1) {
+                for (Integer a : s) {
+                    ans += rec(a, i) * rec(r, mask ^ i);
                 }
-
-                fans += ans;
+            } else {
+                ans += rec(nr, i) * rec(r, mask ^ i);
             }
+
+            fans += ans;
         }
 
         return (dp[r][mask] = fans);

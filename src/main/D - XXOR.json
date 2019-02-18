@@ -1,0 +1,44 @@
+{
+  "name" : "D - XXOR",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 7\n1 6 3\n",
+    "output" : "14\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 9\n7 4 0 3\n",
+    "output" : "46\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1 0\n1000000000000\n",
+    "output" : "1000000000000\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.DXXOR",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.03",
+  "contestName" : "AtCoder Beginner Contest 117",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

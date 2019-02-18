@@ -1,0 +1,44 @@
+{
+  "name" : "E. Missing Numbers",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n5 11 44\n",
+    "output" : "Yes\n4 5 16 11 64 44\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "2\n9900\n",
+    "output" : "Yes\n100 9900\n",
+    "index" : 1,
+    "active" : false
+  }, {
+    "input" : "6\n314 1592 6535\n",
+    "output" : "No\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.EMissingNumbers",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.16",
+  "contestName" : "Avito Cool Challenge 2018",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

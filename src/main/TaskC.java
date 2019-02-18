@@ -3,63 +3,84 @@ package main;
 import fastio.InputReader;
 import fastio.OutputWriter;
 
-import java.util.PriorityQueue;
-import java.util.TreeSet;
-
 public class TaskC {
-    private long ans;
-
-    class num {
-        int i;
-        int num;
-
-        public num(int i, int num) {
-            this.i = i;
-            this.num = num;
-        }
-    }
+    char d = 'D';
+    char m = 'M';
+    char c = 'C';
 
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.nextInt();
 
-        int[] a = new int[n];
+        String s = in.next();
+
+        long[] dpre = new long[n];
+
+        long[] csuf = new long[n];
 
         for (int i = 0; i < n; i++) {
-            a[i] = in.nextInt();
-        }
-
-        PriorityQueue<num> pq = new PriorityQueue<>((n1, n2) -> n1.num - n2.num);
-        TreeSet<Integer> ts = new TreeSet<>();
-
-        for (int i = 0; i < n; i++) {
-            pq.add(new num(i, a[i]));
-            ts.add(i);
-        }
-
-        long ans = 0;
-        int min = 0;
-        while (pq.size() > 2) {
-            num num = pq.poll();
-
-            int av = num.num - min;
-            ans += ((long)pq.size() -1)* av;
-
-            min = num.num;
-
-            ts.remove(num.i);
-
-            Integer li = ts.floor(num.i);
-            Integer ri = ts.ceiling(num.i);
-
-            if (li != null && ri != null) {
-                int lav = a[li] - min;
-                int rav = a[ri] - min;
-
-                ans += Math.min(lav, rav);
+            if (s.charAt(i) == d) {
+                dpre[i] = 1;
+            }
+            if (s.charAt(i) == c) {
+                csuf[i] = 1;
             }
         }
 
-        out.println(ans);
+        dpre = in.calculatePrefixSum(dpre);
+
+        for (int i = n - 2; i >= 0; i--) {
+            csuf[i] = csuf[i] + csuf[i + 1];
+        }
+
+        long tot = 0;
+        for (int i = 1; i < n - 1; i++) {
+            if (s.charAt(i) == m) {
+                tot += dpre[i - 1] * csuf[i + 1];
+            }
+        }
+
+        long[] mfa = new long[n];
+
+        int mf = 0;
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == m) {
+                mf++;
+            }
+
+            if (s.charAt(i) == c)
+                mfa[i] = mf;
+        }
+
+        for (int i = n - 2; i >= 0; i--) {
+            mfa[i] = mfa[i] + mfa[i + 1];
+        }
+
+        int q = in.nextInt();
+
+        o:
+        while (q-- > 0) {
+            int k = in.nextInt();
+
+            long minus = 0;
+
+            mf = 0;
+            for (int i = 0; i < n; i++) {
+                if (s.charAt(i) == m) {
+                    mf++;
+                } else if (s.charAt(i) == d) {
+                    int j = i + k;
+
+                    if (j >= n)
+                        continue;
+
+                    minus += mfa[j] - mf * csuf[j];
+                }
+            }
+
+            out.println(tot - minus);
+        }
 
     }
+
+    int mod = (int) (1e9 + 7);
 }

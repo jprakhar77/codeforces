@@ -1,0 +1,43 @@
+{
+  "name" : "E. Magic Stones",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n7 2 4 12\n7 15 10 12\n",
+    "output" : "Yes\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "3\n4 4 4\n1 2 3\n",
+    "output" : "No\n",
+    "index" : 1,
+    "active" : false
+  }, {
+    "input" : "10\n707645074 7978468 456945316 474239945 262709403 240934546 113271669 851586694 388901819 787182236\n707645074 7978468 25273097 3498240 741813265 279128390 728095238 600432361 998712778 787182236",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.EMagicStones",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.07",
+  "contestName" : "Codeforces Global Round 1",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

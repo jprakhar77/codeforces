@@ -1,47 +1,62 @@
 package library;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class KruskalMst {
-    public class DSU<T> {
+    class DsuInteger {
 
-        Map<T, T> parent = new HashMap<>();
-        Map<T, Integer> rank = new HashMap<>();
+        public DsuInteger(int n) {
+            this.n = n;
+            this.parent = new int[n];
+            this.rank = new int[n];
+            this.size = new int[n];
+        }
 
-        T createSet(T x) {
-            parent.put(x, x);
-            rank.put(x, 0);
+        int[] parent;
+        int[] rank;
+        int[] size;
+        int n;
+
+
+        int createSet(int x) {
+            parent[x] = x;
+            rank[x] = 0;
+            size[x] = 1;
             return x;
         }
 
-        T findSet(T x) {
-            T par = parent.get(x);
-            if (!x.equals(par)) {
-                parent.put(x, findSet(par));
-                return parent.get(x);
+        int findSet(int x) {
+            int par = parent[x];
+            if (x != par) {
+                parent[x] = findSet(par);
+                return parent[x];
             }
             return par;
         }
 
-        T mergeSets(T x, T y) {
-            T rx = parent.get(x);
-            T ry = parent.get(y);
+        int mergeSets(int x, int y) {
+            int rx = findSet(x);
+            int ry = findSet(y);
 
-            T fp = null;
+            if (rx == ry) {
+                return rx;
+            }
 
-            if (rank.get(rx) > rank.get(ry)) {
-                parent.put(ry, rx);
+            int fp = -1;
+
+            if (rank[rx] > rank[ry]) {
+                parent[ry] = rx;
                 fp = rx;
             } else {
-                parent.put(rx, ry);
+                parent[rx] = ry;
                 fp = ry;
             }
 
-            if (rank.get(rx).equals(rank.get(ry))) {
-                rank.put(ry, rank.get(ry) + 1);
+            size[fp] = size[rx] + size[ry];
+
+            if (rank[rx] == rank[ry]) {
+                rank[ry] = rank[ry] + 1;
             }
 
             return fp;
@@ -64,7 +79,7 @@ public class KruskalMst {
 
     List<Edge> kruskal(List<Edge> edges, int n) {
 
-        DSU<Integer> dsu = new DSU<>();
+        DsuInteger dsu = new DsuInteger(n);
 
         for (int i = 0; i < n; i++) {
             dsu.createSet(i);

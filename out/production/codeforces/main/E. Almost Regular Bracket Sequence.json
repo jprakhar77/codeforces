@@ -1,0 +1,49 @@
+{
+  "name" : "E. Almost Regular Bracket Sequence",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6\n(((())\n",
+    "output" : "3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6\n()()()\n",
+    "output" : "0\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n)\n",
+    "output" : "0\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "8\n)))(((((\n",
+    "output" : "0\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.EAlmostRegularBracketSequence",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.27",
+  "contestName" : "Codeforces Round #529 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

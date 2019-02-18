@@ -1,0 +1,44 @@
+{
+  "name" : "D - Match Matching",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "20 4\n3 7 8 4\n",
+    "output" : "777773\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "101 9\n9 8 7 6 5 4 3 2 1\n",
+    "output" : "71111111111111111111111111111111111111111111111111\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "15 3\n5 4 6\n",
+    "output" : "654\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.DMatchMatching",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.16",
+  "contestName" : "AtCoder Beginner Contest 118",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

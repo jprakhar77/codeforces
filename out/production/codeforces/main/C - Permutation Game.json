@@ -1,0 +1,39 @@
+{
+  "name" : "C - Permutation Game",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "8\n3 6 5 4 2 7 1 8\n",
+    "output" : "BAAAABAB\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "15\n3 11 2 5 10 9 7 13 15 8 4 12 6 1 14\n",
+    "output" : "ABAAAABBBAABAAB\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.10",
+  "contestName" : "Lyft Level 5 Challenge 2018 - Elimination Round",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

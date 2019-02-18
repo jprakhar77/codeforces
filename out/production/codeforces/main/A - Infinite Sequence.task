@@ -1,0 +1,45 @@
+21 A - Infinite Sequence
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+6 1 7 3
+
+4 YES
+
+1
+1
+8 10 10 0
+
+4 YES
+
+1
+2
+7 1 -4 5
+
+3 NO
+
+1
+3
+8 0 60 50
+
+3 NO
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._675A
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.10
+30 Codeforces Round #353 (Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

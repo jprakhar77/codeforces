@@ -1,0 +1,39 @@
+23 B - Reverse and Compare
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+5 aatt
+
+2 5
+
+1
+1
+11 xxxxxxxxxx
+
+2 1
+
+1
+2
+12 abracadabra
+
+3 44
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.24
+25 AtCoder Grand Contest 019
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

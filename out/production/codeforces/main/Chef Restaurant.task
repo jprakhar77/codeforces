@@ -1,0 +1,39 @@
+15 Chef Restaurant
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+35 1
+4 5
+5 7
+9 10
+2 3
+20 30
+5
+6
+7
+35
+1
+10 0
+0
+2
+-1
+1
+1
+8 src/main
+7 -Xmx64M
+4 Main
+19 main.ChefRestaurant
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.29
+35 September Lunchtime 2018 Division 1
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

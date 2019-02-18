@@ -1,0 +1,47 @@
+{
+  "name" : "E. Nice table",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 2\nAG\nCT\n",
+    "output" : "AG\nCT\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 5\nAGCAG\nAGCAG\nAGCAG\n",
+    "output" : "TGCAT\nCATGC\nTGCAT\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 3\nAAA\nGGG\nCCC\nAAA\nGGG",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "2 2\nGA\nCT",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.ENiceTable",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.05",
+  "contestName" : "Codeforces Round #530 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

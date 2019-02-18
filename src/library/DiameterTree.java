@@ -9,8 +9,13 @@ public class DiameterTree {
     int node1;
     int dis = -1;
 
+    int center;
+
+    int[] parent;
+
     public DiameterTree(Set[] g) {
         this.g = g;
+        this.parent = new int[g.length];
     }
 
     void dfs(int u, int p, int cmax) {
@@ -19,10 +24,22 @@ public class DiameterTree {
             dis = cmax;
         }
 
+        parent[u] = p;
+
         for (edge edge : (HashSet<edge>) g[u]) {
             int v = edge.v;
             if (v != p)
                 dfs(v, u, cmax + 1);
         }
+    }
+
+    int findCenter(int u) {
+        int current = node1;
+
+        for (int i = 0; i < dis / 2; i++) {
+            current = parent[current];
+        }
+
+        return current;
     }
 }

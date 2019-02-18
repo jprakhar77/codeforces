@@ -1,0 +1,53 @@
+{
+  "name" : "F. New Year and the Mallard Expedition",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "1\n10\nG\n",
+    "output" : "30\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "2\n10 10\nWL\n",
+    "output" : "40\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n1 2\nWL\n",
+    "output" : "8\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "3\n10 10 10\nGLW\n",
+    "output" : "80\n",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "3\n10 9 10\nGLW",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.FNewYearAndTheMallardExpedition",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.31",
+  "contestName" : "Good Bye 2018",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

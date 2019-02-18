@@ -1,0 +1,44 @@
+12 A - The Rank
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+73 5
+100 98 100 100
+100 100 100 100
+100 100 99 99
+90 99 90 100
+100 98 60 99
+
+2 2
+
+1
+1
+75 6
+100 80 90 99
+60 60 60 60
+90 60 100 60
+60 100 60 80
+100 100 0 100
+0 0 0 0
+
+2 1
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.08
+72 Codeforces Round #502 (in memory of Leopoldo Taravilse, Div. 1 + Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

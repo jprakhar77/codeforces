@@ -1,0 +1,44 @@
+{
+  "name" : "A - Subscribers",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "10 3 5\n",
+    "output" : "3 0\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10 7 5\n",
+    "output" : "5 2\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "100 100 100\n",
+    "output" : "100 100\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.ASubscribers",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.27",
+  "contestName" : "全国統一プログラミング王決定戦予選/NIKKEI Programming Contest 2019",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

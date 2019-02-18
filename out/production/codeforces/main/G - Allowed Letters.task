@@ -1,0 +1,49 @@
+19 G - Allowed Letters
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+34 bedefead
+5
+2 e
+1 dc
+5 b
+7 ef
+6 ef
+
+9 deadbeef
+
+1
+1
+10 abacaba
+0
+
+8 aaaabbc
+
+1
+2
+16 fc
+2
+1 cfab
+2 f
+
+3 cf
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.18
+50 Educational Codeforces Round 47 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

@@ -3,51 +3,51 @@ package main;
 import fastio.InputReader;
 import fastio.OutputWriter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TaskB {
     public void solve(int testNumber, InputReader in, OutputWriter out) {
         int n = in.nextInt();
-        int m = in.nextInt();
+        int k = in.nextInt();
 
-        String[] mat = new String[n];
+        int[] a = in.nextIntArray(n);
 
-        for (int i = 0; i < n; i++) {
-            mat[i] = in.next();
-        }
+        List<Long> al = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (mat[i].charAt(j) == '#') {
-                    for (int x = i + 1; x < n; x++) {
-                        if (mat[x].charAt(j) == '#') {
-                            for (int y = 0; y < m; y++) {
-                                if (mat[i].charAt(y) != mat[x].charAt(y)) {
-                                    out.println("No");
-                                    return;
-                                }
-                            }
-                        }
-                    }
-                }
+            long csum = 0;
+            for (int j = i; j < n; j++) {
+                csum += a[j];
+
+                al.add(csum);
             }
         }
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (mat[j].charAt(i) == '#') {
-                    for (int x = i + 1; x < m; x++) {
-                        if (mat[j].charAt(x) == '#') {
-                            for (int y = 0; y < n; y++) {
-                                if (mat[y].charAt(i) != mat[y].charAt(x)) {
-                                    out.println("No");
-                                    return;
-                                }
-                            }
-                        }
+        long ans = 0;
+
+        for (int i = 43; i >= 0; i--) {
+            int cnt = 0;
+            for (long num : al) {
+                if (((1l << i) & num) != 0) {
+                    cnt++;
+                }
+            }
+
+            if (cnt >= k) {
+                ans |= (1l << i);
+                List<Long> nal = new ArrayList<>();
+
+                for (long num : al) {
+                    if (((1l << i) & num) != 0) {
+                        nal.add(num);
                     }
                 }
+
+                al = nal;
             }
         }
 
-        out.println("Yes");
+        out.println(ans);
     }
 }

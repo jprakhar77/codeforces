@@ -1,0 +1,44 @@
+{
+  "name" : "C - Different Strokes",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n10 10\n20 20\n30 30\n",
+    "output" : "20\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n20 10\n20 20\n20 30\n",
+    "output" : "20\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "6\n1 1000000000\n1 1000000000\n1 1000000000\n1 1000000000\n1 1000000000\n1 1000000000\n",
+    "output" : "-2999999997\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.CDifferentStrokes",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.27",
+  "contestName" : "全国統一プログラミング王決定戦予選/NIKKEI Programming Contest 2019",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

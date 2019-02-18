@@ -1,0 +1,42 @@
+7 B - And
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+12 4 3
+1 2 3 7
+
+2 1
+
+0
+1
+10 2 228
+1 1
+
+2 0
+
+0
+2
+10 3 7
+1 2 3
+
+3 -1
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.30
+46 Codeforces Round #500 (Div. 2) [based on EJOI]
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

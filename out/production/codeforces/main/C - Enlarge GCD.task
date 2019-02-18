@@ -1,0 +1,39 @@
+15 C - Enlarge GCD
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+8 3
+1 2 4
+
+1 1
+1
+1
+12 4
+6 9 15 30
+
+1 2
+1
+2
+8 3
+1 1 1
+
+2 -1
+1
+8 src/main
+8 -Xmx256M
+4 Main
+11 main._1047C
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.22
+30 Codeforces Round #511 (Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

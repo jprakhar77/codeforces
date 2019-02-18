@@ -1,0 +1,74 @@
+{
+  "name" : "B. Farewell Party",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n0 0 0\n",
+    "output" : "Possible\n1 1 1 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n3 3 2 2 2\n",
+    "output" : "Possible\n1 1 2 2 2 \n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4\n0 1 2 3\n",
+    "output" : "Impossible\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "3\n2 2 2",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "4\n3 3 3 3",
+    "output" : "",
+    "index" : 4,
+    "active" : true
+  }, {
+    "input" : "1\n0",
+    "output" : "",
+    "index" : 5,
+    "active" : true
+  }, {
+    "input" : "6\n5 4 4 3 3 3",
+    "output" : "",
+    "index" : 6,
+    "active" : true
+  }, {
+    "input" : "7\n1 1 1 1 1 1 1",
+    "output" : "",
+    "index" : 7,
+    "active" : true
+  }, {
+    "input" : "4\n2 2 2 2",
+    "output" : "",
+    "index" : 8,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.BFarewellParty",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.16",
+  "contestName" : "Avito Cool Challenge 2018",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

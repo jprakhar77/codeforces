@@ -72,7 +72,7 @@ public class OrderStatisticsTree {
         return (a > b) ? a : b;
     }
 
-    // A utility function to right rotate subtree rooted with y
+    // A utility function to rightIndex rotate subtree rooted with y
     // See the diagram given above.
     Node rightRotate(Node y) {
         Node x = y.left;
@@ -92,7 +92,7 @@ public class OrderStatisticsTree {
         return x;
     }
 
-    // A utility function to left rotate subtree rooted with x
+    // A utility function to leftIndex rotate subtree rooted with x
     // See the diagram given above.
     Node<Integer> leftRotate(Node<Integer> x) {
         Node y = x.right;

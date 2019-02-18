@@ -1,0 +1,36 @@
+22 D - Min Max Repetition
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+44 5
+2 3 1 5
+6 4 1 10
+2 3 4 4
+6 4 3 7
+8 10 5 8
+
+30 BABAB
+AABAABAABB
+A
+BAABA
+ABAB
+
+1
+8 src/main
+8 -Xmx512M
+4 Main
+10 main.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.25
+25 AtCoder Grand Contest 020
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

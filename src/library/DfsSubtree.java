@@ -12,14 +12,18 @@ public class DfsSubtree {
     int n;
     List[] g;
 
-    public DfsSubtree(int n, List[] g) {
-        this.n = n;
+    public DfsSubtree(List[] g) {
+        this.n = g.length;
         this.g = g;
+        this.dfsOrder = new int[n];
+        this.loc = new int[n];
+        this.subStart = new int[n];
+        this.subEnd = new int[n];
     }
 
     int dfs(int u, int p, int st) {
         dfsOrder[st] = u;
-        loc[u] = st;
+        loc[u] = st; // Store as per per question
         subStart[u] = st;
         st++;
 

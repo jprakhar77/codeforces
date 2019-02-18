@@ -1,0 +1,39 @@
+{
+  "name" : "D - Labyrinth",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 5\n3 2\n1 2\n.....\n.***.\n...**\n*....\n",
+    "output" : "10\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4 4\n2 2\n0 1\n....\n..*.\n....\n....\n",
+    "output" : "7\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx512M",
+  "mainClass" : "Main",
+  "taskClass" : "main._1064D",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.15",
+  "contestName" : "Codeforces Round #516 (Div. 2, by Moscow Team Olympiad)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

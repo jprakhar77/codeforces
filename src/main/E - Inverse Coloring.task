@@ -1,0 +1,39 @@
+20 hellooo - Inverse Coloring
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+4 1 1
+
+2 0
+
+1
+1
+4 2 3
+
+2 6
+
+1
+2
+8 49 1808
+
+10 359087121
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._1041E
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.19
+50 Educational Codeforces Round 49 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

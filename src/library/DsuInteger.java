@@ -6,16 +6,19 @@ public class DsuInteger {
         this.n = n;
         this.parent = new int[n];
         this.rank = new int[n];
+        this.size = new int[n];
     }
 
     int[] parent;
     int[] rank;
+    int[] size;
     int n;
 
 
     int createSet(int x) {
         parent[x] = x;
         rank[x] = 0;
+        size[x] = 1;
         return x;
     }
 
@@ -45,6 +48,8 @@ public class DsuInteger {
             parent[rx] = ry;
             fp = ry;
         }
+
+        size[fp] = size[rx] + size[ry];
 
         if (rank[rx] == rank[ry]) {
             rank[ry] = rank[ry] + 1;

@@ -1,0 +1,44 @@
+{
+  "name" : "D - Mysterious Crime",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 2\n1 2 3\n2 3 1\n",
+    "output" : "4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 6\n1 2 3 4 5\n2 3 1 4 5\n3 4 5 1 2\n3 5 4 2 1\n2 3 5 4 1\n1 2 3 4 5\n",
+    "output" : "5\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2 2\n1 2\n2 1\n",
+    "output" : "2\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.28",
+  "contestName" : "Codeforces Round #519 by Botan Investments",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

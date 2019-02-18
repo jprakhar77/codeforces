@@ -1,0 +1,39 @@
+{
+  "name" : "D - Restore the Tree",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 1\n1 2\n1 3\n2 3\n",
+    "output" : "0\n1\n2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6 3\n2 1\n2 3\n4 1\n4 2\n6 1\n2 6\n4 6\n6 5\n",
+    "output" : "6\n4\n2\n0\n6\n2\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.DRestoreTheTree",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.27",
+  "contestName" : "全国統一プログラミング王決定戦予選/NIKKEI Programming Contest 2019",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

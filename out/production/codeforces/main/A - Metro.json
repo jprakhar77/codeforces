@@ -1,0 +1,44 @@
+{
+  "name" : "A - Metro",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5 3\n1 1 1 1 1\n1 1 1 1 1\n",
+    "output" : "YES\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 4\n1 0 0 0 1\n0 1 1 1 1\n",
+    "output" : "YES\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 2\n0 1 1 1 1\n1 1 1 1 1\n",
+    "output" : "NO\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskA",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.10",
+  "contestName" : "Mail.Ru Cup 2018 Round 2",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

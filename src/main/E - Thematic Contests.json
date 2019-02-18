@@ -1,0 +1,44 @@
+{
+  "name" : "E - Thematic Contests",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "18\n2 1 2 10 2 10 10 2 2 1 10 10 10 10 1 1 10 10\n",
+    "output" : "14\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10\n6 6 6 3 6 1000000000 3 3 6 6\n",
+    "output" : "9\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "3\n1337 1337 1337\n",
+    "output" : "3\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._1077E",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.16",
+  "contestName" : "Codeforces Round #521 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

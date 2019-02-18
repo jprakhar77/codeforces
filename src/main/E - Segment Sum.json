@@ -1,0 +1,49 @@
+{
+  "name" : "E - Segment Sum",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "10 50 2\n",
+    "output" : "1230\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1 2345 10\n",
+    "output" : "2750685\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "101 154 2\n",
+    "output" : "2189\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "10 20 1",
+    "output" : "110",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._1073E",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.26",
+  "contestName" : "Educational Codeforces Round 53 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

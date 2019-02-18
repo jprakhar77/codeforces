@@ -1,0 +1,41 @@
+21 A - Palindromic Twist
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+39 5
+6
+abccba
+2
+cf
+4
+adfa
+8
+abaazaba
+2
+ml
+
+17 YES
+NO
+YES
+NO
+NO
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.18
+50 Educational Codeforces Round 49 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

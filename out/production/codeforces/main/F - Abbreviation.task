@@ -1,0 +1,42 @@
+16 F - Abbreviation
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+21 6
+to be or not to be
+
+3 12
+
+1
+1
+25 10
+a ab a a b ab a a b c
+
+3 13
+
+1
+2
+20 6
+aa bb aa aa bb bb
+
+3 11
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+11 main._1003F
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.03
+30 Codeforces Round #494 (Div. 3)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

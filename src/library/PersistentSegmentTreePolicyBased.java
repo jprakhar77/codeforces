@@ -66,7 +66,7 @@ public class PersistentSegmentTreePolicyBased {
         }
     }
 
-    int query(node curNode1, node curNode2, int rs, int re, int gtt) {
+    int queryGT(node curNode1, node curNode2, int rs, int re, int gtt) {
         if (re <= gtt) {
             return 0;
         }
@@ -77,8 +77,25 @@ public class PersistentSegmentTreePolicyBased {
 
         int m = (rs + re) / 2;
 
-        int p1 = query(curNode1.left, curNode2.left, rs, m, gtt);
-        int p2 = query(curNode1.right, curNode2.right, m + 1, re, gtt);
+        int p1 = queryGT(curNode1.left, curNode2.left, rs, m, gtt);
+        int p2 = queryGT(curNode1.right, curNode2.right, m + 1, re, gtt);
+
+        return p1 + p2;
+    }
+
+    int queryLTE(node curNode1, node curNode2, int rs, int re, int ltet) {
+        if (rs > ltet) {
+            return 0;
+        }
+
+        if (re <= ltet) {
+            return curNode2.cnt - curNode1.cnt;
+        }
+
+        int m = (rs + re) / 2;
+
+        int p1 = queryLTE(curNode1.left, curNode2.left, rs, m, ltet);
+        int p2 = queryLTE(curNode1.right, curNode2.right, m + 1, re, ltet);
 
         return p1 + p2;
     }

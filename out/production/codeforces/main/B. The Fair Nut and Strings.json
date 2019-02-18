@@ -1,0 +1,49 @@
+{
+  "name" : "B. The Fair Nut and Strings",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 4\naa\nbb\n",
+    "output" : "6\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 3\naba\nbba\n",
+    "output" : "8\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4 5\nabbb\nbaaa\n",
+    "output" : "8\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "4 2\nabbb\nbaaa",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.BTheFairNutAndStrings",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.11",
+  "contestName" : "Codeforces Round #526 (Div. 1)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

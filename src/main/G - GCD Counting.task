@@ -1,0 +1,65 @@
+16 G - GCD Counting
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+16 3
+1 2 3
+1 2
+2 3
+
+12 1 4
+2 1
+3 1
+
+1
+1
+36 6
+1 2 4 8 16 32
+1 6
+6 3
+3 4
+4 2
+6 5
+
+26 1 6
+2 5
+4 6
+8 1
+16 2
+32 1
+
+1
+2
+25 4
+9 16 144 6
+1 3
+2 3
+4 3
+
+31 1 1
+2 1
+3 1
+6 2
+9 2
+16 2
+144 1
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskG
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.06.10
+50 Educational Codeforces Round 45 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

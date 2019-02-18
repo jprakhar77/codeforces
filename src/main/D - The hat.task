@@ -1,0 +1,57 @@
+11 D - The hat
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+6 8
+2
+2
+
+-1
+1
+1
+200 6
+<span class="tex-span"></span>
+1
+<span class="tex-span"></span>
+2
+<span class="tex-span"></span>
+3 
+<span class="tex-span"></span>
+2
+<span class="tex-span"></span>
+1
+<span class="tex-span"></span>
+0
+245 <span class="tex-span"></span>
+? 1
+<span class="tex-span"></span>
+? 2
+<span class="tex-span"></span>
+? 3
+<span class="tex-span"></span>
+? 4
+<span class="tex-span"></span>
+? 5
+<span class="tex-span"></span>
+? 6
+<span class="tex-span"></span>
+! -1
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.12
+38 Codeforces Round #503 (by SIS, Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

@@ -1,0 +1,39 @@
+24 C - Maximum Subrectangle
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+18 3 3
+1 2 3
+1 2 3
+9
+
+2 4
+
+1
+1
+18 5 1
+5 4 2 4 5
+2
+5
+
+2 1
+
+1
+8 src/main
+8 -Xmx512M
+4 Main
+10 main.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.10.04
+68 Codeforces Round #513 by Barcelona Bootcamp (rated, Div. 1 + Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

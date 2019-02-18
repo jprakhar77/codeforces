@@ -1,0 +1,51 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><i>Note: This problem has a nonstandard time limit: 5 seconds.</i>
+<br></br>
+<br></br>
+You may have solved the following task before:
+<br></br>
+<br></br>
+<i>
+Given is an n by m board.
+Some cells of the board contain obstacles.
+Find the minimal number of obstacles one has to remove so that it will be possible to place a box onto the cell (0, 0) and then move it via some empty cells to (n-1, m-1) by repeatedly moving it by one cell up / down / left / right.
+</i>
+<br></br>
+<br></br>
+This task is very similar, but there is one difference: the box now has dimensions 2 by 2.
+We say that the box is at the position (x, y) when it occupies the cells (x, y), (x+1, y), (x, y+1) and (x+1, y+1).
+The box must start at (0, 0) and end at (n-2, m-2).
+At all moments, including the start and the end, all four cells occupied by the box must be empty (i.e., they may not contain any obstacles).
+At all moments, the whole box must be inside the board.
+In each step, we can only move the box up / down / left / right by one cell.
+That is, if we have the box at the position (x, y), we can move it to (x-1, y), (x+1, y), (x, y-1), or (x, y+1).
+<br></br>
+<br></br>
+You are given the String[] <b>board</b> that describes the current state of the board: '#' is an obstacle, '.' is an empty cell.
+Find the minimal number of obstacles that have to be removed in order to create a board on which it is possible to move a 2x2 box from (0, 0) to (n-2, m-2) in the way described above.</td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>TwoByTwo</td></tr><tr><td>Method:</td><td>minimal</td></tr><tr><td>Parameters:</td><td>String[]</td></tr><tr><td>Returns:</td><td>int</td></tr><tr><td>Method signature:</td><td>int minimal(String[] board)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td colspan="2"><h3>Limits</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Time limit (s):</td><td>5.000</td></tr><tr><td>Memory limit (MB):</td><td>1024</td></tr><tr><td>Stack limit (MB):</td><td>1024</td></tr></table></td></tr><tr><td colspan="2"><h3>Notes</h3></td></tr><tr><td align="center" valign="top">-</td><td>The return value is always well-defined. In particular, note that if we remove all obstacles we will certainly have a valid board.</td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td>n, m will be between 2 and 16, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td><b>board</b> will contain exactly n element.</td></tr><tr><td align="center" valign="top">-</td><td>Each element in <b>board</b> will contain exactly m element.</td></tr><tr><td align="center" valign="top">-</td><td>Each character in <b>board</b> will be '#' or '.'.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;..#&quot;,
+ &quot;...&quot;,
+ &quot;#..&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 1</pre></td></tr><tr><td><table><tr><td colspan="2">The optimal solution is to remove any one of these two obstacles. For example, if we remove the top-right one, we can move from top-left to bottom-right by moving right and then moving down:
+<pre>
+oo.    .oo    ...  
+oo. -> .oo -> .oo 
+#..    #..    #oo
+</pre>
+
+</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;#..#.#&quot;,
+ &quot;##.##.&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 7</pre></td></tr><tr><td><table><tr><td colspan="2">This time we need to remove all of them.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;......&quot;,
+ &quot;......&quot;,
+ &quot;####..&quot;,
+ &quot;####..&quot;,
+ &quot;......&quot;,
+ &quot;......&quot;,
+ &quot;..####&quot;,
+ &quot;..####&quot;,
+ &quot;......&quot;,
+ &quot;......&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 0</pre></td></tr><tr><td><table><tr><td colspan="2">This time we don't need to remove anything.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;.###.#.#&quot;,
+ &quot;#.#.#..#&quot;,
+ &quot;#..#..#.&quot;,
+ &quot;#..#.#.#&quot;,
+ &quot;#.#....#&quot;,
+ &quot;#.##.##.&quot;,
+ &quot;.#.##...&quot;,
+ &quot;#.####.#&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 10</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">4)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;##&quot;,
+ &quot;##&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 4</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

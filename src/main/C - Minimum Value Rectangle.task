@@ -1,0 +1,41 @@
+27 C - Minimum Value Rectangle
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+42 3
+4
+7 2 2 7
+8
+2 8 1 4 8 2 1 5
+5
+5 5 5 5 5
+
+24 2 7 7 2
+2 2 1 1
+5 5 5 5
+
+1
+1
+15 1
+6
+2 2 3 4 5 5
+7 2 2 5 5
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.18
+50 Educational Codeforces Round 49 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

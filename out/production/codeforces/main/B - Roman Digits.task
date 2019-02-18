@@ -1,0 +1,67 @@
+16 B - Roman Digits
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+10
+0
+2 1
+
+2 4
+
+1
+1
+2 2
+
+3 10
+
+1
+2
+3 10
+
+4 244
+
+1
+3
+2 11
+0 
+1
+4
+2 12
+0 
+1
+5
+2 13
+0 
+1
+6
+2 14
+0 
+1
+7
+2 15
+0 
+1
+8
+2 16
+0 
+1
+9
+10 1000000000
+0 
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._997B
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.02
+30 Codeforces Round #493 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

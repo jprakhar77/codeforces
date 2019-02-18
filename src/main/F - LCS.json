@@ -1,0 +1,49 @@
+{
+  "name" : "F - LCS",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "axyb\nabyxb\n",
+    "output" : "axb\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "aa\nxayaz\n",
+    "output" : "aa\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "a\nz\n",
+    "output" : "\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "abracadabra\navadakedavra\n",
+    "output" : "aaadara\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.FLCS",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.06",
+  "contestName" : "Educational DP Contest / DP まとめコンテスト",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

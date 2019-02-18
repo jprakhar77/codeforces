@@ -1,0 +1,39 @@
+26 B - Minimum Ternary String
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+7 100210
+
+7 001120
+
+1
+1
+9 11222121
+
+9 11112222
+
+1
+2
+3 20
+
+3 20
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.14
+50 Educational Codeforces Round 47 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

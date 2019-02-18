@@ -1,0 +1,41 @@
+20 F - The Neutral Zone
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+11 12 0 0 1 0
+
+3 63
+
+1
+1
+10 4 1 2 3 4
+
+4 136
+
+1
+2
+18 300000000 1 1 1 1 
+-1
+0
+3
+17 300000000 0 0 1 0
+-1
+1
+8 src/main
+7 -Xmx16M
+4 Main
+11 main._1017F
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.09
+72 Codeforces Round #502 (in memory of Leopoldo Taravilse, Div. 1 + Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

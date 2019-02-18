@@ -1,0 +1,39 @@
+{
+  "name" : "D - Powerful array",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 2\n1 2 1\n1 2\n1 3\n",
+    "output" : "3\n6\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "8 3\n1 1 2 2 1 3 1 1\n2 7\n1 6\n2 7\n",
+    "output" : "20\n20\n20\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._86D",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.08",
+  "contestName" : "Yandex.Algorithm 2011<br>Round 2",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

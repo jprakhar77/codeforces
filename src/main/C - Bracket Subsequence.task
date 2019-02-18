@@ -1,0 +1,40 @@
+23 C - Bracket Subsequence
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+11 6 4
+()(())
+
+5 ()()
+
+1
+1
+13 8 8
+(()(()))
+
+9 (()(()))
+
+1
+2
+15 10 4
+((()))()()
+-1
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.17
+74 Codeforces Round #504 (rated, Div. 1 + Div. 2, based on VK Cup 2018 Final)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

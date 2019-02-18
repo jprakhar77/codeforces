@@ -1,0 +1,49 @@
+{
+  "name" : "B - Forgery",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 3\n###\n#.#\n###\n",
+    "output" : "YES",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3 3\n###\n###\n###\n",
+    "output" : "NO",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4 3\n###\n###\n###\n###\n",
+    "output" : "YES",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "5 7\n.......\n.#####.\n.#.#.#.\n.#####.\n.......\n",
+    "output" : "YES",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskB",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.05",
+  "contestName" : "Codeforces Round #514 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

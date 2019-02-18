@@ -1,0 +1,52 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><p><i>All problems in this problem set are about "chains": collections of nested ranges of integers. All problems are independent, but use the same definitions. Each problem statement contains the definitions it needs. If a term appears in multiple problems, the definition is always identical.</i></p>
+
+<p>
+Definitions follow. The defined term is always in uppercase.
+</p>
+
+<ul>
+<li>
+An <i>INTERVAL</i> [x,y) with x &lt;= y is the set of integers that are greater than or equal to x, and strictly less than y.
+</li>
+<li>
+There is only one <i>EMPTY INTERVAL</i> but it has multiple equivalent notations. For example, [0,0) and [3,3) both denote the empty interval. Note that [3,0) is not a valid interval, because an interval [x,y) must have x &lt;= y.
+</li>
+<li>
+An interval I<sub>1</sub> is called a <i>PROPER SUBSET</i> of an interval I<sub>2</sub> if I<sub>2</sub> contains all elements of I<sub>1</sub> and at least one other element.
+</li>
+<li>
+A <i>CHAIN</i> is a <i>nonempty</i> sequence of intervals such that each interval (except for the last one) is a proper subset of the next interval.
+</li>
+<li>
+A <i>CHAIN OF ORDER n</i> is any chain such that the last interval in the chain is either the interval [0,n) or its proper subset.
+</li>
+<li>
+The <i>LENGTH OF A CHAIN</i> is the number of intervals that form it. (I.e., a chain is a sequence of objects, and when we talk about its length, we mean the length of that sequence.)
+</li>
+<li>
+A <i>MAXIMAL CHAIN OF ORDER n</i> is any chain such that no other chain of order n has a greater length.
+</li>
+</ul>
+
+<p>
+You are given the int <b>n</b>.
+Compute and return the number of maximal chains of order <b>n</b>.
+</p></td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>Chains1</td></tr><tr><td>Method:</td><td>countMaximalChains</td></tr><tr><td>Parameters:</td><td>int</td></tr><tr><td>Returns:</td><td>long</td></tr><tr><td>Method signature:</td><td>long countMaximalChains(int n)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td colspan="2"><h3>Limits</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Time limit (s):</td><td>2.000</td></tr><tr><td>Memory limit (MB):</td><td>256</td></tr></table></td></tr><tr><td colspan="2"><h3>Notes</h3></td></tr><tr><td align="center" valign="top">-</td><td>For the given constraints it is guaranteed that the correct return value fits into a long.</td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td><b>n</b> will be between 1 and 50, inclusive.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>2</pre></td></tr></table></td></tr><tr><td><pre>Returns: 2</pre></td></tr><tr><td><table><tr><td colspan="2"><p>
+The two maximal chains of order 2 are the following:
+</p>
+<ul>
+<li>[0,0), [0,1), [0,2)</li>
+<li>[0,0), [1,2), [0,2)</li>
+</ul>
+
+<p>
+Note that the chain [1,1), [0,1), [0,2) is the same chain as the first chain listed above. This is because [0,0) and [1,1) are two equivalent ways of writing the empty interval.
+</p>
+<p>
+In other words, the two maximal chains of order 2 are:
+</p>
+<ul>
+<li>the empty interval, [0,1), [0,2)</li>
+<li>the empty interval, [1,2), [0,2)</li>
+</ul>
+</td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

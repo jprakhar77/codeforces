@@ -192,7 +192,7 @@ public class _609F {
 
                 Integer nm = mm.ceilingKey(bl + 1);
 
-                int nbl = bl + b;
+                long nbl = (long) bl + b;
                 while (nm != null && nm <= nbl) {
                     List<Integer> l = mm.get(nm);
                     for (int j = 0; j < l.size(); j++) {
@@ -204,6 +204,8 @@ public class _609F {
                     nm = mm.ceilingKey(bl + 1);
                 }
 
+                nbl = Math.min(nbl, (int) 1e9);
+
                 IntervalTreeNonOverlap.Interval pn = sint;
                 for (IntervalTreeNonOverlap.Interval cn = sint.next; cn != null; cn = cn.next) {
                     if (cn.e <= nbl) {
@@ -211,25 +213,29 @@ public class _609F {
                         it.deleteInterval(cn);
                     } else if (cn.s <= nbl) {
                         it.deleteInterval(cn);
-                        IntervalTreeNonOverlap.Interval nint = new IntervalTreeNonOverlap.Interval(cn.i, nbl + 1, cn.e);
+                        IntervalTreeNonOverlap.Interval nint = new IntervalTreeNonOverlap.Interval(cn.i, (int) nbl + 1, cn.e);
                         pn.next = nint;
-                        nint = cn.next;
+                        nint.next = cn.next;
                         it.addInterval(nint);
-                        break;
+                        pn = nint;
                     } else if (cn.s > nbl)
                         break;
-                    pn = cn;
                 }
 
                 it.deleteInterval(sint);
-                sint.e = nbl;
+                sint.e = (int) nbl;
                 it.addInterval(sint);
             }
         }
 
+        StringBuilder ans = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            out.println(count[i] + " " + size[i]);
+            ans.append(count[i]);
+            ans.append(" ");
+            ans.append(size[i]);
+            ans.append("\n");
         }
 
+        out.println(ans.toString());
     }
 }

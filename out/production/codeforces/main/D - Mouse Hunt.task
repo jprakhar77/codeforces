@@ -1,0 +1,45 @@
+14 D - Mouse Hunt
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+23 5
+1 2 3 2 10
+1 3 4 3 3
+
+2 3
+
+1
+1
+20 4
+1 10 2 10
+2 4 2 2
+
+3 10
+
+1
+2
+30 7
+1 1 1 1 1 1 1
+2 2 2 3 6 7 6
+
+2 2
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskD
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.18
+50 Educational Codeforces Round 49 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

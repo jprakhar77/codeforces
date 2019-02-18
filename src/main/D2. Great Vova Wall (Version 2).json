@@ -1,0 +1,49 @@
+{
+  "name" : "D2. Great Vova Wall (Version 2)",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n2 1 1 2 5\n",
+    "output" : "YES\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "3\n4 5 3\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : false
+  }, {
+    "input" : "2\n10 10\n",
+    "output" : "YES\n",
+    "index" : 2,
+    "active" : false
+  }, {
+    "input" : "7\n2 1 1 2 1 1 2",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.D2GreatVovaWallVersion2",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.18",
+  "contestName" : "Codeforces Round #527 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

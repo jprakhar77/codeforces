@@ -1,0 +1,46 @@
+{
+  "name" : "C. Vasya and Templates",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n4\nbbcb\naada\naada\n3\nabc\nbbb\nbbb\n",
+    "output" : "YES\nbadc\nNO\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n2\nba\naa\nab",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n2\naaa\naaa\nbbb",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n2\nabab\nbaba\nbbbb",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.VasyaAndTemplates",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.11",
+  "contestName" : "Codeforces Round #528 (Div. 1, based on Technocup 2019 Elimination Round 4)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -10,9 +10,6 @@ public class Dijkstra {
         this.g = g;
     }
 
-    public Dijkstra() {
-    }
-
     class node {
         int node;
         long dis;

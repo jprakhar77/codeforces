@@ -1,0 +1,49 @@
+{
+  "name" : "E - New Year and Three Musketeers",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n10 20 30\n1 1 1 1 50\n",
+    "output" : "2\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n10 20 30\n1 1 1 1 51\n",
+    "output" : "3\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "7\n30 20 10\n34 19 50 33 88 15 20\n",
+    "output" : "-1\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "6\n10 5 10\n10 9 5 25 20 5\n",
+    "output" : "3\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._611E",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.10.17",
+  "contestName" : "Good Bye 2015",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

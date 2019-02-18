@@ -1,0 +1,71 @@
+<html><body bgcolor="#000000" text="#ffffff"><table><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td>Gravity Puzzle is a game played on a rectangular board divided into unit square cells.
+Each cell contains at most one box.
+<br></br>
+<br></br>
+There are four buttons, labeled Left, Right, Up, and Down.
+You play the game by pushing these buttons (one at a time, in any order, each button arbitrarily many times).
+<br></br>
+<br></br>
+At the beginning of the game, there is no gravity, so each box remains in its cell.
+The buttons control gravity: pushing a button turns on gravity in the direction given on its label.
+Gravity makes all the boxes fall in the given direction: whenever the cell next to a box in the given direction is empty, the box moves into that cell.
+Note that each time you push a button, all boxes immediately fall as far as they can in the given direction of gravity.
+<br></br>
+<br></br>
+For example, if you push the button labeled Down, all boxes will immediately fall downwards until no more movement is possible.
+Thus, after you push the button labeled Down, within each column the boxes will move to the bottommost rows.
+<br></br>
+<br></br>
+Below are two examples that show the effect of pushing the buttons labeled Down and Right from the same configuration of boxes. Boxes are denoted '#' and empty cells '.'.
+<br></br>
+<br></br>
+<pre>
+...#                ....
+.##.    'Down' ->   .#..
+.#..                .###
+
+...#                ...#
+.##.   'Right' ->   ..##
+.#..                ...#
+</pre>
+<br></br>
+<br></br>
+You are given one particular configuration of boxes on the board in the String[] <b>board</b>.
+The elements of <b>board</b> describe the rows of the board from top to bottom.
+(I.e., <b>board</b>[0] describes the topmost row of the board, and so on.)
+The characters of <b>board</b>[r] describe the cells in row r from left to right, with '.' being an empty cell and '#' a cell with a box.
+<br></br>
+<br></br>
+The configuration of boxes given in <b>board</b> is the desired final configuration.
+A starting configuration C of boxes is <i>winnable</i> if there is a sequence of zero or more button presses that changes C into the configuration given in <b>board</b>.
+<br></br>
+<br></br>
+If the board has r rows and c columns, there are 2^(r*c) possible starting configurations of boxes, because each of the r*c cells is either empty or it contains a box.
+Please count how many of these configurations are winnable, and return that count modulo 10^9 + 7.</td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Class:</td><td>GravityPuzzle</td></tr><tr><td>Method:</td><td>count</td></tr><tr><td>Parameters:</td><td>String[]</td></tr><tr><td>Returns:</td><td>int</td></tr><tr><td>Method signature:</td><td>int count(String[] board)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></table></td></tr><tr><td colspan="2"><h3>Limits</h3></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td>Time limit (s):</td><td>2.000</td></tr><tr><td>Memory limit (MB):</td><td>256</td></tr><tr><td>Stack limit (MB):</td><td>256</td></tr></table></td></tr><tr><td colspan="2"><h3>Constraints</h3></td></tr><tr><td align="center" valign="top">-</td><td><b>board</b> will contain between 1 and 50 elements, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>Each element in <b>board</b> will contain between 1 and 50 characters, inclusive.</td></tr><tr><td align="center" valign="top">-</td><td>Each element in <b>board</b> will contain the same number of characters.</td></tr><tr><td align="center" valign="top">-</td><td>Each character in <b>board</b> will be '.' or '#'.</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;#...&quot;,
+ &quot;....&quot;,
+ &quot;....&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 12</pre></td></tr><tr><td><table><tr><td colspan="2">The winnable configurations are precisely the 12 configurations that contain exactly one box: you can push 'Left' then push 'Top' and that box will be in the top-left corner.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;.#.&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 1</pre></td></tr><tr><td><table><tr><td colspan="2">This time we only have one solution: {".#."} itself.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;#.&quot;,
+ &quot;##&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 4</pre></td></tr><tr><td><table><tr><td colspan="2">We have these 4 solutions:
+<pre>
+#.
+## {}
+
+##
+.# {"Down", "Left"}
+
+.#
+## {"Left"}
+
+##
+#. {"Down"}
+</pre></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;.##&quot;,
+ &quot;..#&quot;,
+ &quot;...&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 72</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">4)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;.##########.&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;,
+ &quot;............&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 999999937</pre></td></tr><tr><td><table><tr><td colspan="2">Don't forget mod.</td></tr></table></td></tr></table></td></tr><tr><td align="center" nowrap="true">5)</td><td></td></tr><tr><td>&#160;&#160;&#160;&#160;</td><td><table><tr><td><table><tr><td><pre>{&quot;.&quot;}</pre></td></tr></table></td></tr><tr><td><pre>Returns: 1</pre></td></tr><tr><td><table><tr><td colspan="2"></td></tr></table></td></tr></table></td></tr></table><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2003, TopCoder, Inc.  All rights reserved.  </p></body></html>

@@ -1,0 +1,46 @@
+9 hellooo - Store
+6 SINGLE
+8 STANDARD
+-1
+8 STANDARD
+-1
+2
+0
+60 10 10 10 3 1 3
+2 6 2
+4 2 4
+6 4 6
+9 9 9
+3 3 3
+10 10 10
+8 8 8
+
+28 CORRECT
+OPEN
+CLOSED
+UNKNOWN
+
+1
+1
+34 10 10 10 1 1 1
+2 5 7
+2 5 7
+8 9 10
+
+10 INCORRECT
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._1027E
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.03
+30 Codeforces Round #499 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

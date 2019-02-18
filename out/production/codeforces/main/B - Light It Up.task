@@ -1,0 +1,42 @@
+15 B - Light It Up
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+11 3 10
+4 6 7
+
+2 8
+
+1
+1
+10 2 12
+1 10
+
+2 9
+
+1
+2
+8 2 7
+3 4
+
+2 6
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.06.27
+50 Educational Codeforces Round 46 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

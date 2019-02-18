@@ -3,8 +3,8 @@ package fastio;
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.InputMismatchException;
+import java.util.*;
+import java.util.function.BiFunction;
 
 public class InputReader {
     private boolean finished = false;
@@ -217,6 +217,46 @@ public class InputReader {
         return value == -1;
     }
 
+    public String ns() {
+        return next();
+    }
+
+    public int ni() {
+        return nextInt();
+    }
+
+    public long nl() {
+        return nextLong();
+    }
+
+    public int[] nia(int n) {
+        return nextIntArray(n);
+    }
+
+    public long[] nla(int n) {
+        return nextLongArray(n);
+    }
+
+    public String[] ng(int n) {
+        String[] g = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            g[i] = ns();
+        }
+
+        return g;
+    }
+
+    public char[][] ng(int n, int m) {
+        char[][] g = new char[n][m];
+
+        for (int i = 0; i < n; i++) {
+            g[i] = ns().toCharArray();
+        }
+
+        return g;
+    }
+
     public String next() {
         return nextString();
     }
@@ -269,5 +309,267 @@ public class InputReader {
 
     public interface SpaceCharFilter {
         public boolean isSpaceChar(int ch);
+    }
+
+    public void readArray(int[] a, int n, int offset) {
+        for (int i = 0; i < n; i++) {
+            a[i] = nextInt() - offset;
+        }
+    }
+
+    public void readArray(long[] a, int n, long offset) {
+        for (int i = 0; i < n; i++) {
+            a[i] = nextLong() - offset;
+        }
+    }
+
+    public void readUndirectedGraph(List[] g, int numOfVertices, int numOfEdges, int offset) {
+        for (int i = 0; i < numOfVertices; i++) {
+            g[i] = new ArrayList();
+        }
+
+        for (int i = 0; i < numOfEdges; i++) {
+            int u = nextInt() - offset;
+            int v = nextInt() - offset;
+
+            if (u == v)
+                continue;
+
+            g[u].add(v);
+            g[v].add(u);
+        }
+    }
+
+    public void readDirectedGraph(List[] g, int numOfVertices, int numOfEdges, int offset) {
+        for (int i = 0; i < numOfVertices; i++) {
+            g[i] = new ArrayList();
+        }
+
+        for (int i = 0; i < numOfEdges; i++) {
+            int u = nextInt() - offset;
+            int v = nextInt() - offset;
+
+            g[u].add(v);
+        }
+    }
+
+    public void readUndirectedGraph(Set[] g, int numOfVertices, int numOfEdges, int offset) {
+        for (int i = 0; i < numOfVertices; i++) {
+            g[i] = new HashSet();
+        }
+
+        for (int i = 0; i < numOfEdges; i++) {
+            int u = nextInt() - offset;
+            int v = nextInt() - offset;
+
+            g[u].add(v);
+            g[v].add(u);
+        }
+    }
+
+    public void readDirectedGraph(Set[] g, int numOfVertices, int numOfEdges, int offset) {
+        for (int i = 0; i < numOfVertices; i++) {
+            g[i] = new HashSet();
+        }
+
+        for (int i = 0; i < numOfEdges; i++) {
+            int u = nextInt() - offset;
+            int v = nextInt() - offset;
+
+            g[u].add(v);
+        }
+    }
+
+    public void readTree(List[] g, int numOfVertices, int offset) {
+        int numOfEdges = numOfVertices - 1;
+
+        for (int i = 0; i < numOfVertices; i++) {
+            g[i] = new ArrayList();
+        }
+
+        for (int i = 0; i < numOfEdges; i++) {
+            int p = nextInt() - offset;
+
+            g[p].add(i + 1);
+            g[i + 1].add(p);
+        }
+    }
+
+    public void readTree(Set[] g, int numOfVertices, int offset) {
+        int numOfEdges = numOfVertices - 1;
+
+        for (int i = 0; i < numOfVertices; i++) {
+            g[i] = new HashSet();
+        }
+
+        for (int i = 0; i < numOfEdges; i++) {
+            int p = nextInt() - offset;
+
+            g[p].add(i + 1);
+            g[i + 1].add(p);
+        }
+    }
+
+    public int ceil(int a, int b) {
+        int ceil = (a + b - 1) / b;
+        return ceil;
+    }
+
+    public long ceil(long a, long b) {
+        long ceil = (a + b - 1) / b;
+        return ceil;
+    }
+
+    public int[] calculatePrefixSum(int[] a) {
+        int n = a.length;
+
+        int[] prefixSum = new int[n];
+
+        prefixSum[0] = a[0];
+
+        for (int i = 1; i < n; i++) {
+            prefixSum[i] = prefixSum[i - 1] + a[i];
+        }
+
+        return prefixSum;
+    }
+
+    public long[] calculatePrefixSum(long[] a) {
+        int n = a.length;
+
+        long[] prefixSum = new long[n];
+
+        prefixSum[0] = a[0];
+
+        for (int i = 1; i < n; i++) {
+            prefixSum[i] = prefixSum[i - 1] + a[i];
+        }
+
+        return prefixSum;
+    }
+
+    public long[] calculatePrefixMin(long[] a) {
+        int n = a.length;
+
+        long[] prefixMin = new long[n];
+
+        prefixMin[0] = a[0];
+
+        for (int i = 1; i < n; i++) {
+            prefixMin[i] = Math.min(prefixMin[i - 1], a[i]);
+        }
+
+        return prefixMin;
+    }
+
+    public long[] calculatePrefixMax(long[] a) {
+        int n = a.length;
+
+        long[] prefixMax = new long[n];
+
+        prefixMax[0] = a[0];
+
+        for (int i = 1; i < n; i++) {
+            prefixMax[i] = Math.max(prefixMax[i - 1], a[i]);
+        }
+
+        return prefixMax;
+    }
+
+    public long[] reverse(long[] a) {
+        int n = a.length;
+
+        for (int i = 0, j = n - 1; i < j; i++, j--) {
+            long temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+
+        return a;
+    }
+
+    public long[] calculatePrefixSum(long[] a, long mod) {
+        int n = a.length;
+
+        long[] prefixSum = new long[n];
+
+        prefixSum[0] = a[0] % mod;
+
+        for (int i = 1; i < n; i++) {
+            prefixSum[i] = prefixSum[i - 1] + a[i];
+            prefixSum[i] %= mod;
+        }
+
+        return prefixSum;
+    }
+
+    public List<Long> calculatePrefixSum(List<Integer> list) {
+        List<Long> cumList = new ArrayList<>();
+
+        if (list.isEmpty())
+            return cumList;
+
+        cumList.add((long) list.get(0));
+
+        long curSum = list.get(0);
+
+        for (int i = 1; i < list.size(); i++) {
+            curSum += list.get(i);
+
+            cumList.add(curSum);
+        }
+
+        return cumList;
+    }
+
+    public long[] calculateSuffixSum(long[] a) {
+        return calculateSuffixFunc(a, (x, y) -> x + y);
+    }
+
+    public long[] calculateSuffixMin(long[] a) {
+        return calculateSuffixFunc(a, (x, y) -> Math.min(x, y));
+    }
+
+    public long[] calculateSuffixMax(long[] a) {
+        return calculateSuffixFunc(a, (x, y) -> Math.max(x, y));
+    }
+
+    public long[] calculateSuffixFunc(long[] a, BiFunction<Long, Long, Long> biFunction) {
+        int n = a.length;
+
+        long[] suffixMin = new long[n];
+
+        suffixMin[n - 1] = a[n - 1];
+
+        for (int i = n - 2; i >= 0; i--) {
+            suffixMin[i] = biFunction.apply(suffixMin[i + 1], a[i]);
+        }
+
+        return suffixMin;
+    }
+
+    public long[] calculateSuffixSum(long[] a, int mod) {
+        int n = a.length;
+
+        long[] suffixSum = new long[n];
+
+        suffixSum[n - 1] = a[n - 1];
+
+        for (int i = n - 2; i >= 0; i--) {
+            suffixSum[i] = suffixSum[i + 1] + a[i];
+            suffixSum[i] %= mod;
+        }
+
+        return suffixSum;
+    }
+
+    public int squareRoot(int num) {
+        int squareRoot = (int) Math.sqrt(num);
+
+        while (squareRoot * squareRoot <= num) {
+            squareRoot++;
+        }
+
+        return squareRoot - 1;
     }
 }

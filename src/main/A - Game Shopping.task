@@ -1,0 +1,45 @@
+17 A - Game Shopping
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+22 5 4
+2 4 5 2 4
+5 3 4 6
+
+2 3
+
+1
+1
+25 5 2
+20 40 50 20 40
+19 20
+
+2 0
+
+1
+2
+40 6 4
+4 8 15 16 23 42
+1000 1000 1000 1000
+
+2 4
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.07.14
+50 Educational Codeforces Round 47 (Rated for Div. 2)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

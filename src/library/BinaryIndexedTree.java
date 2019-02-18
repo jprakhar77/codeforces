@@ -31,4 +31,24 @@ class BinaryIndexedTree {
             idx += (idx & -idx);
         }
     }
+
+    public int sum(int l, int r) {
+        int val = sum(r);
+
+        if (l > 0) {
+            val -= sum(l - 1);
+        }
+
+        return val;
+    }
+
+    public int value(int i) {
+        int val = sum(i);
+
+        if (i > 0) {
+            val -= sum(i - 1);
+        }
+
+        return val;
+    }
 }

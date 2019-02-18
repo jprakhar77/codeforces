@@ -1,0 +1,48 @@
+27 B - Weakened Common Divisor
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+20 3
+17 18
+15 24
+12 15
+
+1 6
+1
+1
+13 2
+10 16
+7 17
+
+3 -1
+
+1
+2
+36 5
+90 108
+45 105
+75 40
+165 175
+33 30
+
+2 5
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskB
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.19
+74 Codeforces Round #505 (rated, Div. 1 + Div. 2, based on VK Cup 2018 Final)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

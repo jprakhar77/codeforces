@@ -1,0 +1,39 @@
+{
+  "name" : "D. Super M",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7 2\n1 2\n1 3\n1 4\n3 5\n3 6\n3 7\n2 7\n",
+    "output" : "2\n3\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6 4\n1 2\n2 3\n2 4\n4 5\n4 6\n2 4 5 6\n",
+    "output" : "2\n4\n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.DSuperM",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.29",
+  "contestName" : "Codeforces Round #328 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

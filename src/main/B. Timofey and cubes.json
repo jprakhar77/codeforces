@@ -1,0 +1,49 @@
+{
+  "name" : "B. Timofey and cubes",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "7\n4 3 7 6 9 1 2\n",
+    "output" : "2 3 9 6 7 1 4\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "8\n6 1 4 2 5 6 9 2\n",
+    "output" : "2 1 6 2 5 4 9 6\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n1 3 ",
+    "output" : "",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n-5",
+    "output" : "",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.BTimofeyAndCubes",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.12.20",
+  "contestName" : "Codeforces Round #395 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

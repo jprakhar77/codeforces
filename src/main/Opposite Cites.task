@@ -1,0 +1,42 @@
+14 Opposite Cites
+12 MULTI_NUMBER
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+1
+0
+60 5
+4
+1 1 1 1
+4
+1 1 1 2
+4
+1 -1 -1 4
+4
+1 -1 2 -1
+6
+1 1 2 1 1 -1
+45 YES
+1 1 1 1
+NO
+YES
+1 4 1 4
+NO
+YES
+1 1 2 1 1 2
+1
+8 src/main
+7 -Xmx64M
+4 Main
+18 main.OppositeCites
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.09.29
+35 September Lunchtime 2018 Division 1
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

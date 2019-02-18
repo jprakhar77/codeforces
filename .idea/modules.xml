@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/*TCO19* Single Round Match 736/*TCO19* Single Round Match 736.iml" filepath="$PROJECT_DIR$/*TCO19* Single Round Match 736/*TCO19* Single Round Match 736.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2018 TCO Algorithm/2018 TCO Algorithm.iml" filepath="$PROJECT_DIR$/2018 TCO Algorithm/2018 TCO Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2018 TCO Round 3B DIV 1/2018 TCO Round 3B DIV 1.iml" filepath="$PROJECT_DIR$/2018 TCO Round 3B DIV 1/2018 TCO Round 3B DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fun SRM 745 DIV 1/Fun SRM 745 DIV 1.iml" filepath="$PROJECT_DIR$/Fun SRM 745 DIV 1/Fun SRM 745 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 144 DIV 1/SRM 144 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 144 DIV 1/SRM 144 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 496 DIV 1/SRM 496 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 496 DIV 1/SRM 496 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 599 DIV 2/SRM 599 DIV 2.iml" filepath="$PROJECT_DIR$/SRM 599 DIV 2/SRM 599 DIV 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 682 DIV 1/SRM 682 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 682 DIV 1/SRM 682 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 684 DIV 1/SRM 684 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 684 DIV 1/SRM 684 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 711 DIV 1/SRM 711 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 711 DIV 1/SRM 711 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 714 DIV 1/SRM 714 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 714 DIV 1/SRM 714 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 716 DIV 1/SRM 716 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 716 DIV 1/SRM 716 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 719 DIV 1/SRM 719 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 719 DIV 1/SRM 719 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 720 DIV 1/SRM 720 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 720 DIV 1/SRM 720 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 724 DIV 1/SRM 724 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 724 DIV 1/SRM 724 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 731 DIV 1/SRM 731 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 731 DIV 1/SRM 731 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 734 DIV 1/SRM 734 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 734 DIV 1/SRM 734 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 735 DIV 1/SRM 735 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 735 DIV 1/SRM 735 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 736 DIV 1/SRM 736 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 736 DIV 1/SRM 736 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 736 DIV 2/SRM 736 DIV 2.iml" filepath="$PROJECT_DIR$/SRM 736 DIV 2/SRM 736 DIV 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 738 DIV 1/SRM 738 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 738 DIV 1/SRM 738 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 739 DIV 1/SRM 739 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 739 DIV 1/SRM 739 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 741 DIV 1/SRM 741 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 741 DIV 1/SRM 741 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 742 DIV 1/SRM 742 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 742 DIV 1/SRM 742 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 742 DIV 2/SRM 742 DIV 2.iml" filepath="$PROJECT_DIR$/SRM 742 DIV 2/SRM 742 DIV 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 743 DIV 1/SRM 743 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 743 DIV 1/SRM 743 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 744 DIV 1/SRM 744 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 744 DIV 1/SRM 744 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 746 DIV 1/SRM 746 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 746 DIV 1/SRM 746 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 746 DIV 2/SRM 746 DIV 2.iml" filepath="$PROJECT_DIR$/SRM 746 DIV 2/SRM 746 DIV 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 748 DIV 1/SRM 748 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 748 DIV 1/SRM 748 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 749 DIV 1/SRM 749 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 749 DIV 1/SRM 749 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 750 DIV 1/SRM 750 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 750 DIV 1/SRM 750 DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRM 750 DIV 2/SRM 750 DIV 2.iml" filepath="$PROJECT_DIR$/SRM 750 DIV 2/SRM 750 DIV 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO 2017 Round 3A DIV 1/TCO 2017 Round 3A DIV 1.iml" filepath="$PROJECT_DIR$/TCO 2017 Round 3A DIV 1/TCO 2017 Round 3A DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO 2017 Round 3B DIV 1/TCO 2017 Round 3B DIV 1.iml" filepath="$PROJECT_DIR$/TCO 2017 Round 3B DIV 1/TCO 2017 Round 3B DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO 2018 Round 3A DIV 1/TCO 2018 Round 3A DIV 1.iml" filepath="$PROJECT_DIR$/TCO 2018 Round 3A DIV 1/TCO 2018 Round 3A DIV 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 SRM 746/TCO19 SRM 746.iml" filepath="$PROJECT_DIR$/TCO19 SRM 746/TCO19 SRM 746.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 SRM 747/TCO19 SRM 747.iml" filepath="$PROJECT_DIR$/TCO19 SRM 747/TCO19 SRM 747.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 SRM 748/TCO19 SRM 748.iml" filepath="$PROJECT_DIR$/TCO19 SRM 748/TCO19 SRM 748.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 SRM 749/TCO19 SRM 749.iml" filepath="$PROJECT_DIR$/TCO19 SRM 749/TCO19 SRM 749.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 Single Round Match 737/TCO19 Single Round Match 737.iml" filepath="$PROJECT_DIR$/TCO19 Single Round Match 737/TCO19 Single Round Match 737.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 Single Round Match 738/TCO19 Single Round Match 738.iml" filepath="$PROJECT_DIR$/TCO19 Single Round Match 738/TCO19 Single Round Match 738.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 Single Round Match 739/TCO19 Single Round Match 739.iml" filepath="$PROJECT_DIR$/TCO19 Single Round Match 739/TCO19 Single Round Match 739.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 Single Round Match 740/TCO19 Single Round Match 740.iml" filepath="$PROJECT_DIR$/TCO19 Single Round Match 740/TCO19 Single Round Match 740.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 Single Round Match 743/TCO19 Single Round Match 743.iml" filepath="$PROJECT_DIR$/TCO19 Single Round Match 743/TCO19 Single Round Match 743.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCO19 Single Round Match 744/TCO19 Single Round Match 744.iml" filepath="$PROJECT_DIR$/TCO19 Single Round Match 744/TCO19 Single Round Match 744.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codeforces.iml" filepath="$PROJECT_DIR$/codeforces.iml" />
+    </modules>
+  </component>
+</project>

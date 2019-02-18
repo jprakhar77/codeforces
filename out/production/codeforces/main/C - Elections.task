@@ -1,0 +1,63 @@
+13 C - Elections
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+4
+0
+22 5
+1 2
+1 2
+1 2
+2 1
+0 0
+
+2 3
+
+0
+1
+18 4
+1 2
+1 2
+2 1
+0 0
+
+2 2
+
+0
+2
+11 1
+100000 0
+
+2 0
+
+0
+3
+67 10
+2 6696
+2 933
+1 9336
+1 1690
+3 3928
+1 3507
+0 0
+2 9195
+2 983
+1 3503
+0 
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main._458C
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.12
+46 MemSQL Start[c]UP 2.0 - Round 2 - Online Round
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

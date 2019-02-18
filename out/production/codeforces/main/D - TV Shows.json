@@ -1,0 +1,44 @@
+{
+  "name" : "D - TV Shows",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5 4 3\n1 2\n4 10\n2 4\n10 11\n5 9\n",
+    "output" : "60",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "6 3 2\n8 20\n6 22\n4 15\n20 28\n17 25\n20 27\n",
+    "output" : "142",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2 1000000000 2\n1 2\n2 3\n",
+    "output" : "999999997",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.TaskD",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.22",
+  "contestName" : "Codeforces Round #523 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

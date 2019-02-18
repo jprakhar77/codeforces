@@ -1,0 +1,45 @@
+27 B - A Leapfrog in the Array
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 4 3
+2
+3
+4
+
+6 3
+2
+4
+
+1
+1
+14 13 4
+10
+5
+4
+8
+
+9 13
+3
+8
+9
+
+1
+8 src/main
+8 -Xmx512M
+4 Main
+10 main._949B
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.02
+30 Codeforces Round #469 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

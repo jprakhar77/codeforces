@@ -1,0 +1,35 @@
+10 C - Border
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+2
+0
+10 2 8
+12 20
+
+6 2
+0 4 
+1
+1
+14 3 10
+10 20 30
+
+4 1
+0 
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskC
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.03
+30 Codeforces Round #499 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

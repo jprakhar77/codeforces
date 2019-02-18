@@ -1,0 +1,48 @@
+7 A - Fly
+6 SINGLE
+8 STANDARD
+9 input.txt
+8 STANDARD
+10 output.txt
+3
+0
+14 2
+12
+11 8
+7 5
+
+14 10.0000000000
+
+1
+1
+16 3
+1
+1 4 1
+2 5 3
+
+3 -1
+
+1
+2
+28 6
+2
+4 6 3 3 5 6
+2 6 3 6 5 3
+
+14 85.4800000000
+
+1
+8 src/main
+8 -Xmx256M
+4 Main
+10 main.TaskA
+39 net.egork.chelper.checkers.TokenChecker
+0 
+0
+10 2018.08.03
+30 Codeforces Round #499 (Div. 1)
+1
+18 fastio.InputReader
+19 fastio.OutputWriter
+0
+0

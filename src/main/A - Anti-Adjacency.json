@@ -1,0 +1,49 @@
+{
+  "name" : "A - Anti-Adjacency",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3 2\n",
+    "output" : "YES\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 5\n",
+    "output" : "NO\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "31 10\n",
+    "output" : "YES\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "10 90\n",
+    "output" : "NO\n",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "main.AAntiAdjacency",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.02.09",
+  "contestName" : "Yahoo Programming Contest 2019",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

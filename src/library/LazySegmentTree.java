@@ -4,7 +4,7 @@ class LazySegmentTree {
     double[] tree;
     int n;
     double[] a;
-    double[] lazyadd;
+    double[] lazy;
     double[] lazysub;
 
     public LazySegmentTree(double[] a, int n) {
@@ -12,7 +12,7 @@ class LazySegmentTree {
         this.a = a;
         this.n = n;
         this.tree = new double[4 * n];
-        this.lazyadd = new double[4 * n];
+        this.lazy = new double[4 * n];
         this.lazysub = new double[4 * n];
     }
 
@@ -52,17 +52,17 @@ class LazySegmentTree {
     }
 
     private void lazyAdjustment(int i, int rs, int re) {
-        tree[i] += lazyadd[i] * (re - rs + 1) - lazysub[i] * tree[i];
+        tree[i] += lazy[i] * (re - rs + 1) - lazysub[i] * tree[i];
 
         if (rs < re) {
-            lazyadd[i * 2 + 1] += lazyadd[i] - lazysub[i] * lazyadd[i * 2 + 1];
+            lazy[i * 2 + 1] += lazy[i] - lazysub[i] * lazy[i * 2 + 1];
             lazysub[i * 2 + 1] += lazysub[i] - lazysub[i] * lazysub[i * 2 + 1];
 
-            lazyadd[i * 2 + 2] += lazyadd[i] - lazysub[i] * lazyadd[i * 2 + 2];
+            lazy[i * 2 + 2] += lazy[i] - lazysub[i] * lazy[i * 2 + 2];
             lazysub[i * 2 + 2] += lazysub[i] - lazysub[i] * lazysub[i * 2 + 2];
         }
 
-        lazyadd[i] = 0;
+        lazy[i] = 0;
         lazysub[i] = 0;
     }
 
@@ -74,7 +74,7 @@ class LazySegmentTree {
         }
 
         if (us <= rs && ue >= re) {
-            lazyadd[i] = add;
+            lazy[i] = add;
             lazysub[i] = sub;
             return (re - rs + 1) * add - sub * tree[i];
         }

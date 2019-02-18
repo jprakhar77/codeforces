@@ -1,0 +1,44 @@
+{
+  "name" : "B - Boxes",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n4 5 1 2 3\n",
+    "output" : "YES\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n6 9 12 10 8\n",
+    "output" : "YES\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "4\n1 2 3 1\n",
+    "output" : "NO\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.BBoxes",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.01.27",
+  "contestName" : "AtCoder Grand Contest 010",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

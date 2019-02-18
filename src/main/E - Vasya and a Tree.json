@@ -1,0 +1,39 @@
+{
+  "name" : "E - Vasya and a Tree",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n1 2\n1 3\n2 4\n2 5\n3\n1 1 1\n2 0 10\n4 10 100\n",
+    "output" : "1 11 1 100 0 \n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n2 3\n2 1\n5 4\n3 4\n5\n2 0 4\n3 10 1\n1 2 3\n2 3 10\n1 1 7\n",
+    "output" : "10 24 14 11 11 \n",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main._1076E",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.13",
+  "contestName" : "Educational Codeforces Round 54 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

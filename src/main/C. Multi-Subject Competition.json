@@ -1,0 +1,44 @@
+{
+  "name" : "C. Multi-Subject Competition",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "6 3\n2 6\n3 6\n2 5\n3 5\n1 9\n3 1\n",
+    "output" : "22\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 3\n2 6\n3 6\n2 5\n3 5\n1 11\n",
+    "output" : "23\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "5 2\n1 -1\n1 -5\n2 -1\n2 -1\n1 -10\n",
+    "output" : "0\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/main",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "main.CMultiSubjectCompetition",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2018.11.28",
+  "contestName" : "Educational Codeforces Round 55 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "fastio.InputReader",
+  "outputClass" : "fastio.OutputWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
